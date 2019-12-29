@@ -1,0 +1,57 @@
+<h2 id="introduction">Introduction</h2>
+
+<p>This post goes through the configurations required for connecting the <a href="https://www.3ders.org/articles/20130722-german-reprap-launches-protos-v2-3d-printer.html">German RepRap PRotos V2</a> to the software <a href="https://www.repetier.com">Repetier</a> on Mac OSX. The instructions follows the <a href="https://www.repetier.com/documentation/repetier-host-mac/installation-and-connection/">Repetier-Host Mac Documentation</a>.</p>
+
+<h2 id="repetier-host">Repetier-Host</h2>
+
+<p>Download and install <a href="https://www.repetier.com/download-software/"><span class="app">Repetier-Host</span></a> as described in the <a href="../reprap-software/">previous post</a>.</p>
+
+<p>Start <span class="app">Repetier-Host</span>. Get to <em>Printer Settings</em> via the menu:</p>
+
+<p><span class="menu">Printer -&gt; Printer Settings</span></p>
+
+<p>or hit the [cmp]+[p] keys at the same time.</p>
+
+<h3 id="printer-settings">Printer Settings</h3>
+
+<p>In the Printer settings window, add a name of the configuration you want to create. You will need one configuration per printer per printing material. Thus, if you want to use different materials, you should set the name to reflect the material. In the example below I have called my configuration “PROTOS-V2-PLA”.</p>
+
+<h4 id="connection">Connection</h4>
+
+<p>if the <em>Connection</em> is not correctly set, you will not be able to communicate with your printer. You have to give the <em>Port</em>, and probably the <em>Baud Rate</em> will differ comapred to the default. You need to check the documentation of your 3D-printer to get the correct <em>Baud Rate</em>. The other parameters will most likely work by leaving the defaults.</p>
+
+<figure>
+<img src="../../images/repetier-printer-config-connection.png" />
+<figcaption> Repetier-Host connection configuration for German RepRap PRotos V2.</figcaption>
+</figure>
+
+<h4 id="behaviour">Behaviour</h4>
+
+<p>Under the <span class="tab">Behaviour</span> tab, you need to change the <em>Default Extruder Temperature</em> and the <em>Default heated bed temperature</em>  to fit your printer, its heated bed and the material. The <em>Travel Feedrate</em> depends on the extruder opening. The German RepRap PRotos V2 can travel at higher speed then the default. The smaller extruder (1.75 mm) can travel as fast as 10800 mm/min and the larger (3 mm) at 6000 mm/min.</p>
+
+<figure>
+<img src="../../images/repetier-printer-config-behaviour.png" />
+<figcaption> Repetier-Host behaviour configuration for German RepRap PRotos V2, PLA material.</figcaption>
+</figure>
+
+<h4 id="dimension">Dimension</h4>
+
+<p>The German RepRap PRotos V2 is a bit larger (230 mm) compared to the default (200 mm) settings of <span class="app">Repetier-Host</span>.</p>
+
+<figure>
+<img src="../../images/repetier-printer-config-dimension.png" />
+<figcaption> Repetier-Host behaviour configuration for German RepRap PRotos V2, PLA material.</figcaption>
+</figure>
+
+<h4 id="advanced">Advanced</h4>
+
+<p>The advances settings can safely be left blanc.</p>
+
+<figure>
+<img src="../../images/repetier-printer-config-advanced.png" />
+<figcaption> Repetier-Host behaviour configuration for German RepRap PRotos V2, PLA material.</figcaption>
+</figure>
+
+<h4 id="done">Done</h4>
+
+<p>You should now be able to connect to your 3D-printer using <span class="app">Repetier-Host</span>.</p>

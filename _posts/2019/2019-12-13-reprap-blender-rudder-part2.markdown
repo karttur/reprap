@@ -1,0 +1,112 @@
+---
+layout: post
+title: Design a kayak rudder, part 2
+categories: blog
+excerpt: "Cut rudder and add hole for sterring axis in Blender using Python scripting."
+tags:
+  - reprap
+  - Blender
+  - lattice
+image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
+date: '2019-12-12 11:27'
+modified: '2019-12-12 11:27'
+comments: true
+share: true
+---
+
+## Introduction
+
+In the [previous](../reprap-blender-rudder-part1/) post you created a kayak rudder using the <span class='app'>Blender</span> GUI. In this post you will import the rudder to a new <span class='app'>Blender</span> window. Then use Python scripting for adding a hole for fitting the steering axis and cut the rudder in two halves. This as the final rudder will be printed in 2 halves and then plastered together over the steering axis. You can also export the whole rudder, and print it one piece.
+
+## Start Blender with clean view
+
+Start <span class='app'>Blender</span> and [open the scripting view as described in an earlier post](../reprap-blender-python-3d-render/). Copy the following script to the python text editor. Then just run the script as described in the [same post linked above](../reprap-blender-python-3d-render/). 
+
+```
+import bpy
+import sys
+from math import radians,sin,asin,cos,atan,tan,sqrt
+
+#from xml.dom import minidom
+
+def CleanOb(ob):
+    bpy.context.scene.objects.active = ob
+    bpy.ops.object.mode_set(mode='EDIT')
+    bpy.ops.mesh.remove_doubles()
+    bpy.ops.object.mode_set(mode='OBJECT')
+    return
+
+def UnionObs(primOb,secOb):
+    bpy.context.scene.objects.active = primOb
+    boo = primOb.modifiers.new('BooU', 'BOOLEAN')
+    boo.object = secOb
+    boo.operation = 'UNION'
+    bpy.ops.object.modifier_apply(apply_as='DATA', modifier="BooU")
+    bpy.context.scene.objects.unlink(secOb)
+    CleanOb(primOb)
+
+def DiffObs(primOb,secOb):
+    bpy.context.scene.objects.active = primOb
+    boo = primOb.modifiers.new('BooD', 'BOOLEAN')
+    boo.object = secOb
+    boo.operation = 'DIFFERENCE'
+    bpy.ops.object.modifier_apply(apply_as='DATA', modifier="BooD")
+    bpy.context.scene.objects.unlink(secOb)
+    CleanOb(primOb)
+
+def IntersectObs(primOb,secOb):
+    bpy.context.scene.objects.active = primOb
+    boo = primOb.modifiers.new('BooI', 'BOOLEAN')
+    boo.object = secOb
+    boo.operation = 'INTERSECT'
+    bpy.ops.object.modifier_apply(apply_as='DATA', modifier="BooI")
+    bpy.context.scene.objects.unlink(secOb)
+    CleanOb(primOb)
+
+##### Set fixed parameters
+# defualt rotation
+rotation = (0,0,0)
+
+#create a clean scene
+bpy.ops.object.select_all(action='SELECT')
+bpy.ops.object.delete()
+
+#set units
+bpy.types.UnitSettings.system = 'METRIC'
+bpy.types.UnitSettings.scale_length = 0.001
+
+#set scene units
+scn=bpy.context.scene
+
+#bpy.data.scenes[0].UnitSettings.system = 'METRIC'
+bpy.data.scenes[0].unit_settings.scale_length = 0.001
+#Positions
+
+
+#Import rudder
+rudderFPN = '/Users/thomasgumbricht/docs-local/STL_models/2019/vkv-anita-k2-roder_v04.obj'
+bpy.ops.import_scene.obj(filepath=rudderFPN)
+rudder_ob = bpy.context.selected_objects[0] ####<--Fix
+#rudder_ob = bpy.context.object
+
+##### create the objects
+'''
+#Bottom plate for printing
+bpy.ops.mesh.primitive_cylinder_add(radius=15, depth=2, location=(0,0,1), rotation=rotation)
+bottom_ob = bpy.context.object
+opt_ob = bpy.context.object
+#bpy.ops.transform.resize(value=(1, 1/0.76, 1))
+'''
+
+#The rectangular box for cutting negative z
+bpy.ops.mesh.primitive_cube_add(radius=2, location=(0,0,-2), rotation=rotation)
+neg_ob = bpy.context.object
+bpy.ops.transform.resize(value=(5, 5, 1))
+
+#remove the inner wall
+DiffObs(rudder_ob,neg_ob)
+
+FP = "/Users/thomasgumbricht/docs-local/STL_models/2019/rudder_v04.ply"
+bpy.ops.export_mesh.ply(filepath=FP)
+
+```

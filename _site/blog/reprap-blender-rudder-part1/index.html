@@ -1,0 +1,144 @@
+<h2 id="introduction">Introduction</h2>
+
+<p>Creating complex forms in <span class="app">Blender</span> that involves twisting, dragging or otherwise distorting a basic shape is tricky to do using scripting. Instead you attach a lattice over your original form and then interactively massage individual, or grouped, nodes from the lattice and the original form will follow. In this tutorial I show how to create a rudder for a kayak starting from a cylinder.</p>
+
+<h2 id="start-blender-with-clean-view">Start Blender with clean view</h2>
+
+<p>Start <span class="app">Blender</span> (in my case Blender276.app - see <a href="../reprap-software/">previous</a> post).</p>
+
+<figure>
+<img src="../../images/blender-rudder01.png" />
+<figcaption> Initial GUI of Blender, object(s) in orange are active. </figcaption>
+</figure>
+
+<p>For the first part of this manual the 3D viewer mode must be set to <em>Object mode</em>. Just below the 3D viewing area you should see the text <em>Object mode</em> (illustrated in figure 2).</p>
+
+<p>Sequentially remove the objects in the 3D view. Click on the object to remove (either in the 3D view or in the object frame at the top of the column to the right of the 3D view). The selected object turns orange. If you do not manage to select an object, you can use the <em>Select</em> menu and its options towards the GUI bottom left (see figure 2).</p>
+
+<figure>
+<img src="../../images/blender-rudder02.png" />
+<figcaption> Alternative select methods under the Select menu. </figcaption>
+</figure>
+
+<p>With the object selected move the cursor to the 3d view (do not click the cursor, it just has to be <em>in</em> the 3D view), click the <em>Delete</em>+<em>function</em> (<em>&lt;–</em>+<em>fn</em>) keys simultaneously, and a small confirmation box should pop up in the 3D view (see figure below).</p>
+
+<figure>
+<img src="../../images/blender-rudder03.png" />
+<figcaption> To delete an object first select it then press fn+del keys at the same time with the cursor in the 3D view. </figcaption>
+</figure>
+
+<h2 id="add-basic-form">Add basic form</h2>
+
+<p>With a clean 3d view, change the left column to <em>Create</em> from the vertical tabs along the very left margin. If you want the object to be exactly at the center, simultaneoulsy click <em>shift</em>+<em>S</em> keys and select the option <em>Cursor to Center</em>.</p>
+
+<figure>
+<img src="../../images/blender-rudder04.png" />
+<figcaption> Click _shift_+_S_ keys to position the cursor. </figcaption>
+</figure>
+
+<p>Add the basic form you want to use to start with. In the example below I have added a cylinder.</p>
+
+<figure>
+<img src="../../images/blender-rudder05.png" />
+<figcaption> Add the basic form you want to start with. </figcaption>
+</figure>
+
+<h2 id="position-your-basic-shape">Position your basic shape</h2>
+
+<p>This step is not strictly necessary, you can always do it as a post-processing step. But I think it is easier to do it now. The things you need to consider is object position and size. Ideally you want to construct your 3D object so that it can be directly transferred to your 3D printer. This means that the bottom (of your future printed 3D item) should be where Z = 0. In my case I want to print the rudder in 2 halves, and I thus need to rotate the cylinder 90 degrees around either the x or the y axis. Make sure the cylinder is the selected object, press the <em>R</em> key, followed by the <em>X</em> key, then type <em>90</em> and hit return.</p>
+
+<figure>
+<img src="../../images/blender-rudder06.png" />
+<figcaption> Rotate the object by pressing the R key, followed by the axis around which you want to rotate and the degrees of the rotation movement. </figcaption>
+</figure>
+
+<p>Similarily, if you want to change the size, just press the <em>S</em> key, and enter a size factor. This affects all axis equally. To set different size factors on different axis hit the corresponding axis key (X,Y,Z) before entering the scale factor.</p>
+
+<h2 id="add-and-setup-lattice">Add and setup lattice</h2>
+
+<p>To add a new form, simultaneously press the <em>Shift</em>+<em>A</em> keys, and then select the basic shape you desire (<em>lattice</em> in this tutorial). With the lattice selected, change its size (just press the <em>S</em> key followed by a factor and then return) to fit the original object.</p>
+
+<figure>
+<img src="../../images/blender-rudder07.png" />
+<figcaption> Add lattice through pressing the Shift+A keys and then resize by pressing the S key. </figcaption>
+</figure>
+
+<p>With the lattice still selected, click the <em>Object Data</em> button (looks like a small window frame - the blue button in the figure below) in the object menu (in the right column). In the menu that then appears you can set the node density in X(U), Y(V) and Z(W). In the example below I have added 2 nodes to U (total = 4) and 1 node to V (total = 3) for illustration purposes. I suggest that you add so that you get 4 or 5 nodes per axis.</p>
+
+<figure>
+<img src="../../images/blender-rudder08.png" />
+<figcaption> From the object menu select Object Data and set the number of nodes per axis of the lattice. </figcaption>
+</figure>
+
+<p class="pull-right"><img src="../../images/blender-rudder09.png" alt="blender-rudder09" /></p>
+
+<h2 id="attach-lattice-to-original-object">Attach lattice to original object</h2>
+
+<p>Select the original object (cylinder in the exampe) and click the <em>Object modifier</em> button (the small spanner - blue in the example to the right) in the object menu.</p>
+
+<p>The right column will change appearance and only contain a drop down menu for selecting <em>Add Modifier</em>. Click and select <em>lattice</em> from the overwhelming amount of alternatives, as shown below.</p>
+
+<figure>
+<img src="../../images/blender-rudder10.png" />
+<figcaption> Add modifier lattice to the basic shape (cylinder). </figcaption>
+</figure>
+
+<p class="pull-right"><img src="../../images/blender-rudder11.png" alt="blender-rudder11" /></p>
+
+<p>The chosen modifier <em>type</em> shows up as a window with options below the drop down menu. In that small window there is one item for <em>Object</em> (showing a small orange cube and an eye-dropper). Click on the cube, and a drop down list appears showing your alternavites. It should only contain one item, namely your <em>Lattice</em> as shown to the right. Select it.</p>
+
+<h2 id="lattice-object-modifier">Lattice object modifier</h2>
+
+<p>To “activate” the attached lattice for transforming the underlying object (cylinder), you have to do two things: first select the lattice as the active object and then change the 3D view mode to <em>Edit mode</em>. Illustrated in the figure below. The lattice will now show up as a a swarm of nodes.</p>
+
+<figure>
+<img src="../../images/blender-rudder12.png" />
+<figcaption> Activate the lattice transformation mode by selecting the lattice as the active object and change the 3D-view mode to Edit mode. </figcaption>
+</figure>
+
+<p class="pull-right"><img src="../../images/blender-rudder13.png" alt="blender-rudder13" /></p>
+
+<p>To actually use the lattice for transforming your object, you have to select one or more of the nodes, and then whatever you choose to do, will affect the selected nodes. Use the <em>Select</em> menu to define how to select nodes, I prefer using the <em>Border Select</em> option (also reached by just pressing the <em>B</em> key). When selecting a new set of nodes, you first have to <em>(De)Select All</em> (or press the <em>A</em> key).</p>
+
+<p>Selected nodes turn orange, and at the same time the transformation tool will show up. The default setting of the transformation tool is <em>Translate</em>, indicated by arrowheads (illustrated in the image in the next section). Other alternatives are <em>Rotate</em> and <em>Scale</em> (explained further down).</p>
+
+<h2 id="transform-along-axis">Transform along axis</h2>
+
+<p>The form I want to create is a typical rodder shape - a bit thicker towards the bow (where it is attached to the hull) and getting thinner towards the stern. As I have placed my cylinder that means I need to drag my object to become thinner along the y-axis. I thus select all nodes on either side of the x-axis and then <em>Translate</em> the lattice by pulling the selected nodes with the y-axis arrow. The underlying form follows along.</p>
+
+<figure>
+<img src="../../images/blender-rudder14.png" />
+<figcaption> Translate y-axis by pulling it out to a basic rudder shape. </figcaption>
+</figure>
+
+<h2 id="scale">Scale</h2>
+
+<p>When pulling out (<em>Translate</em>) the rudder towards the stern, the proportions between length and height become extortet. To fix that you need to <em>Scale</em> the object along the axis where it is too short.</p>
+
+<p class="pull-left"><img src="../../images/blender-rudder15.png" alt="blender-rudder15" /></p>
+<p>To increase the height  select all the nodes in the lattice. Change from the <em>Translate</em> tool (with arrowheads) to the <em>Scale tool</em> (with cube heads) as illustrated to the left.</p>
+
+<p>As I have placed my rudder (for 3D printing reasons), the height is along the x-axis. The figure below illustrates the <em>Scale</em> function applied along the x-axis.</p>
+
+<figure>
+<img src="../../images/blender-rudder16.png" />
+<figcaption> Scale x-axis by the scale tool. </figcaption>
+</figure>
+
+<h2 id="rotate">Rotate</h2>
+
+<p>The <em>Rotate tool</em> rotates the selected nodes vis-á-vis each other. It is a bit tricky to use.</p>
+
+<figure>
+<img src="../../images/blender-rudder17.png" />
+<figcaption> Rotate tool. </figcaption>
+</figure>
+
+<h2 id="finish-and-export">Finish and export</h2>
+
+<p>With the lattice modifier you can get quite far towards creating a kayak rudder. There are other tools you can use, but I will accept the result shown below. Select the rudder (cylinder) as the active object and then export it as an <span class="file">.obj</span> file as shown below. In the next post I will show how to import the rudder to <span class="app">Blender</span> and cut it, all using Python scripting</p>
+
+<figure>
+<img src="../../images/blender-rudder18.png" />
+<figcaption> Export the rudder as an obj file. </figcaption>
+</figure>

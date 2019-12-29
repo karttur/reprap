@@ -1,0 +1,62 @@
+<h2 id="introduction">Introduction</h2>
+
+<p>I use <span class="app">Blender</span> for creating 3D models that can later be printed as objects. The 3D models can be created interactively using the <span class="app">Blender</span> GUI, but I create most of my objects using Python scripting for controlling <span class="app">Blender</span>.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>You need to install a version of <span class="app">Blender</span> that can be used for Python scripting, detailed in the <a href="../reprap-software/">previous</a> post.</p>
+
+<h2 id="blender">Blender</h2>
+
+<p>Start <span class="app">Blender</span> (in my case Blender276.app).</p>
+
+<p>To run <span class="app">Blender</span> using Python you have to change the <em>Screen Layout</em> from <em>Default</em> to <em>Scripting</em>, as shown in the image below.</p>
+
+<figure>
+<img src="../../images/blender-python01.png" />
+<figcaption> Blender GUI, change screen layout from Default to Scripting.</figcaption>
+</figure>
+
+<p>The GUI changes and the canvas area gets divided into a script and a canvas area. Below the empty script area, click the <em>New</em> option and then <em>Create a new text data block</em>. Illustrated in the figure below.</p>
+
+<figure>
+<img src="../../images/blender-python02.png" />
+<figcaption> Blender GUI, initialise text scripting.</figcaption>
+</figure>
+
+<p>Now you can write your Python code in the text editor area. For the example figure below, add the following script:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'''
+Created on 14 feb 2012
+
+@author: thomasg
+import scipy
+
+'''
+import sys
+
+import bpy
+
+from math import radians,sin,cos
+
+#create a clean scene
+bpy.ops.object.select_all(action='SELECT')
+bpy.ops.object.delete()
+#scaleF is for converting all measures
+scaleF = 0.5
+
+radiusOut = 16.4
+depthOut = 40
+#locationOut = (radiusOut*scaleF,radiusOut*scaleF,depthOut*scaleF/2)
+locationOut = (0,0,depthOut*scaleF/2)
+rotation = (0,0,0)
+bpy.ops.mesh.primitive_cylinder_add(radius=radiusOut*scaleF, depth=depthOut*scaleF, location=locationOut, rotation=rotation)
+outcyl_ob = bpy.context.object
+</code></pre></div></div>
+
+<p>Then run the script from the menu below the text editor window, illustrated in the figure below. You should then get the cylinder as shown in the canvas area on the figure.</p>
+
+<figure>
+<img src="../../images/blender-python03.png" />
+<figcaption> Blender GUI, run python script.</figcaption>
+</figure>

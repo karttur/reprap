@@ -1,1 +1,547 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-29T23:05:29+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Geo Imagine Developer</title><subtitle>script your own Earth</subtitle></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-29T23:07:26+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Geo Imagine Developer</title><subtitle>script your own Earth</subtitle><entry><title type="html">Slic3r Filament settings</title><link href="http://localhost:4000/blog/reprap-slic3r-config-filament/" rel="alternate" type="text/html" title="Slic3r Filament settings" /><published>2019-12-17T11:27:00+01:00</published><updated>2019-12-17T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-slic3r-config-filament</id><content type="html" xml:base="http://localhost:4000/blog/reprap-slic3r-config-filament/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;For each filament material and diameter, as well as nozzle diameter, you have to define different parameter for &lt;strong&gt;print settings&lt;/strong&gt; (&lt;a href=&quot;../reprap-slic3r-config-print&quot;&gt;previous post&lt;/a&gt;), &lt;strong&gt;filament settings&lt;/strong&gt; (this post) and/or &lt;strong&gt;printing settings&lt;/strong&gt; ([next page(../reprap-slic3r-config-printing)]).&lt;/p&gt;
+
+&lt;h2 id=&quot;prerequisits&quot;&gt;Prerequisits&lt;/h2&gt;
+
+&lt;p&gt;&lt;span class=&quot;app&quot;&gt;Slic3r&lt;/span&gt; is installed with &lt;span class=&quot;app&quot;&gt;Repetier-host&lt;/span&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;print-settings&quot;&gt;Print settings&lt;/h3&gt;
+
+&lt;p&gt;You get to the &lt;span class=&quot;app&quot;&gt;Slic3r&lt;/span&gt; page for print setting from the menu:&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;menu&quot;&gt;Settings -&amp;gt; Print Settings… &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;filament settings&lt;/strong&gt; is defined in 5 different pages.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Filament&lt;/li&gt;
+  &lt;li&gt;Cooling&lt;/li&gt;
+  &lt;li&gt;Custom G-code&lt;/li&gt;
+  &lt;li&gt;Notes&lt;/li&gt;
+  &lt;li&gt;Overrides&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But you only need to set the parameters of the first (&lt;em&gt;Filament&lt;/em&gt;) page.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic2r-filament-settings-01.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Filament Settings, Filament.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic2r-filament-settings-02.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Filament Settings, Cooling.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic2r-filament-settings-03.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Filament Settings, Custom G-codes.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic2r-filament-settings-04.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Filament Settings, Notes.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic2r-filament-settings-05.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Filament Settings, Overrides.&lt;/figcaption&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="reprap" /><category term="Slic3r" /><category term="configuration" /><category term="print setting" /><summary type="html">Configure filament setting in Slic3r</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Print setting Slic3r</title><link href="http://localhost:4000/blog/reprap-slic3r-config-print/" rel="alternate" type="text/html" title="Print setting Slic3r" /><published>2019-12-16T11:27:00+01:00</published><updated>2019-12-16T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-slic3r-config-print</id><content type="html" xml:base="http://localhost:4000/blog/reprap-slic3r-config-print/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;For each filament material and diameter, as well as nozzle diameter, you have to define different parameters for &lt;strong&gt;print settings&lt;/strong&gt; (this post), &lt;strong&gt;filament settings&lt;/strong&gt; (&lt;a href=&quot;../reprap-slic3r-config-filament&quot;&gt;next page&lt;/a&gt;) and &lt;strong&gt;printing settings&lt;/strong&gt; (&lt;a href=&quot;../reprap-slic3r-config-printing&quot;&gt;page after next&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h2 id=&quot;prerequisits&quot;&gt;Prerequisits&lt;/h2&gt;
+
+&lt;p&gt;&lt;span class=&quot;app&quot;&gt;Slic3r&lt;/span&gt; is installed with &lt;span class=&quot;app&quot;&gt;Repetier-host&lt;/span&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;print-settings&quot;&gt;Print settings&lt;/h3&gt;
+
+&lt;p&gt;You get to the &lt;span class=&quot;app&quot;&gt;Slic3r&lt;/span&gt; page for print setting from the menu:&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;menu&quot;&gt;Settings -&amp;gt; Print Settings… &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;print settings&lt;/strong&gt; is complex, in all there are 10 different pages with parameters. But only the first five really needs to be considered.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Layers and perimeters&lt;/li&gt;
+  &lt;li&gt;Infill&lt;/li&gt;
+  &lt;li&gt;Skirt and brim&lt;/li&gt;
+  &lt;li&gt;Support material&lt;/li&gt;
+  &lt;li&gt;Speed&lt;/li&gt;
+  &lt;li&gt;Multiple extruders&lt;/li&gt;
+  &lt;li&gt;Advanced&lt;/li&gt;
+  &lt;li&gt;Output options&lt;/li&gt;
+  &lt;li&gt;Notes&lt;/li&gt;
+  &lt;li&gt;Shortcuts&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The settings below are for a 3 mm filament and a German RepRap PRotos V2.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic2r-print-settings-01.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Print Settings, Layers and perimeters.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic2r-print-settings-02.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Print Settings, Infill.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic2r-print-settings-03.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Print Settings, Skirt and brim.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic2r-print-settings-04.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Print Settings, Support material.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic2r-print-settings-05.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Print Settings, Speed.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic2r-print-settings-06.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Print Settings, Multiple extruders.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic2r-print-settings-07.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Print Settings, Advanced.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic2r-print-settings-08.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Print Settings, Output options.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic2r-print-settings-09.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Print Settings, Notes.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic2r-print-settings-10.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Print Settings, Shortcuts.&lt;/figcaption&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="reprap" /><category term="Slic3r" /><category term="configuration" /><category term="print setting" /><summary type="html">Configure print setting in Slic3r</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Configure Repetier-Host</title><link href="http://localhost:4000/blog/reprap-repetier-host-setup/" rel="alternate" type="text/html" title="Configure Repetier-Host" /><published>2019-12-15T11:27:00+01:00</published><updated>2019-12-15T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-repetier-host-setup</id><content type="html" xml:base="http://localhost:4000/blog/reprap-repetier-host-setup/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;This post goes through the configurations required for connecting the &lt;a href=&quot;https://www.3ders.org/articles/20130722-german-reprap-launches-protos-v2-3d-printer.html&quot;&gt;German RepRap PRotos V2&lt;/a&gt; to the software &lt;a href=&quot;https://www.repetier.com&quot;&gt;Repetier&lt;/a&gt; on Mac OSX. The instructions follows the &lt;a href=&quot;https://www.repetier.com/documentation/repetier-host-mac/installation-and-connection/&quot;&gt;Repetier-Host Mac Documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;repetier-host&quot;&gt;Repetier-Host&lt;/h2&gt;
+
+&lt;p&gt;Download and install &lt;a href=&quot;https://www.repetier.com/download-software/&quot;&gt;&lt;span class=&quot;app&quot;&gt;Repetier-Host&lt;/span&gt;&lt;/a&gt; as described in the &lt;a href=&quot;../reprap-software/&quot;&gt;previous post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Start &lt;span class=&quot;app&quot;&gt;Repetier-Host&lt;/span&gt;. Get to &lt;em&gt;Printer Settings&lt;/em&gt; via the menu:&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;menu&quot;&gt;Printer -&amp;gt; Printer Settings&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;or hit the [cmp]+[p] keys at the same time.&lt;/p&gt;
+
+&lt;h3 id=&quot;printer-settings&quot;&gt;Printer Settings&lt;/h3&gt;
+
+&lt;p&gt;In the Printer settings window, add a name of the configuration you want to create. You will need one configuration per printer per printing material. Thus, if you want to use different materials, you should set the name to reflect the material. In the example below I have called my configuration “PROTOS-V2-PLA”.&lt;/p&gt;
+
+&lt;h4 id=&quot;connection&quot;&gt;Connection&lt;/h4&gt;
+
+&lt;p&gt;if the &lt;em&gt;Connection&lt;/em&gt; is not correctly set, you will not be able to communicate with your printer. You have to give the &lt;em&gt;Port&lt;/em&gt;, and probably the &lt;em&gt;Baud Rate&lt;/em&gt; will differ comapred to the default. You need to check the documentation of your 3D-printer to get the correct &lt;em&gt;Baud Rate&lt;/em&gt;. The other parameters will most likely work by leaving the defaults.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/repetier-printer-config-connection.png&quot; /&gt;
+&lt;figcaption&gt; Repetier-Host connection configuration for German RepRap PRotos V2.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h4 id=&quot;behaviour&quot;&gt;Behaviour&lt;/h4&gt;
+
+&lt;p&gt;Under the &lt;span class=&quot;tab&quot;&gt;Behaviour&lt;/span&gt; tab, you need to change the &lt;em&gt;Default Extruder Temperature&lt;/em&gt; and the &lt;em&gt;Default heated bed temperature&lt;/em&gt;  to fit your printer, its heated bed and the material. The &lt;em&gt;Travel Feedrate&lt;/em&gt; depends on the extruder opening. The German RepRap PRotos V2 can travel at higher speed then the default. The smaller extruder (1.75 mm) can travel as fast as 10800 mm/min and the larger (3 mm) at 6000 mm/min.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/repetier-printer-config-behaviour.png&quot; /&gt;
+&lt;figcaption&gt; Repetier-Host behaviour configuration for German RepRap PRotos V2, PLA material.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h4 id=&quot;dimension&quot;&gt;Dimension&lt;/h4&gt;
+
+&lt;p&gt;The German RepRap PRotos V2 is a bit larger (230 mm) compared to the default (200 mm) settings of &lt;span class=&quot;app&quot;&gt;Repetier-Host&lt;/span&gt;.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/repetier-printer-config-dimension.png&quot; /&gt;
+&lt;figcaption&gt; Repetier-Host behaviour configuration for German RepRap PRotos V2, PLA material.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h4 id=&quot;advanced&quot;&gt;Advanced&lt;/h4&gt;
+
+&lt;p&gt;The advances settings can safely be left blanc.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/repetier-printer-config-advanced.png&quot; /&gt;
+&lt;figcaption&gt; Repetier-Host behaviour configuration for German RepRap PRotos V2, PLA material.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h4 id=&quot;done&quot;&gt;Done&lt;/h4&gt;
+
+&lt;p&gt;You should now be able to connect to your 3D-printer using &lt;span class=&quot;app&quot;&gt;Repetier-Host&lt;/span&gt;.&lt;/p&gt;</content><author><name></name></author><category term="reprap" /><category term="software" /><category term="Repetier" /><category term="repetier-host" /><category term="German RepRap Protos V2" /><category term="configuration" /><summary type="html">Configure Repetier-Host Mac for printing with the German RepRap PRotos V2</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Slic3r Configuration assistant</title><link href="http://localhost:4000/blog/reprap-slic3r-config-assist/" rel="alternate" type="text/html" title="Slic3r Configuration assistant" /><published>2019-12-15T11:27:00+01:00</published><updated>2019-12-15T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-slic3r-config-assist</id><content type="html" xml:base="http://localhost:4000/blog/reprap-slic3r-config-assist/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;After &lt;a href=&quot;../reprap-repetier-host-setup/&quot;&gt;configuring &lt;span class=&quot;app&quot;&gt;Repetier-Host&lt;/span&gt;&lt;/a&gt;, you also have to configure &lt;span class=&quot;app&quot;&gt;Slic3r&lt;/span&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;prerequisits&quot;&gt;Prerequisits&lt;/h2&gt;
+
+&lt;p&gt;&lt;span class=&quot;app&quot;&gt;Slic3r&lt;/span&gt; is installed with &lt;span class=&quot;app&quot;&gt;Repetier-host&lt;/span&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;configuration-assistant&quot;&gt;Configuration assistant&lt;/h3&gt;
+
+&lt;p&gt;When you start &lt;span class=&quot;app&quot;&gt;Slic3r&lt;/span&gt; for the first time, you should get to the &lt;em&gt;Configuraton Assistant&lt;/em&gt;. The first page is the welcome page and in total there are eight pages to fill in.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic2r-config-01.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Configuration Assistant, welcome page.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In the second page you must select the firmware type. You need to look in the documentation of your 3D printer to get the firmware.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic2r-config-02.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Configuration Assistant, firmware type.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In the third page set the size of the print bed.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic2r-config-03.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Configuration Assistant, bed size.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In the fourth page you have to give the spitting-out diameter of the extruder nozzle in mm.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic2r-config-04.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Configuration Assistant, nozzle diameter.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In the fifth page you have to give the filament diameter in mm.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic2r-config-05.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Configuration Assistant, filament diameter.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In the sixth page you give the extrusion temperature, hints are given for different materials.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic2r-config-06.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Configuration Assistant, extrusion temperature.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In the seventh page you can give the print bed temperature.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic2r-config-07.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Configuration Assistant, bed temperature.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The last, eight, page tells you that the configuration is done.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic2r-config-08.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Configuration Assistant, bed temperature.&lt;/figcaption&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="reprap" /><category term="Slic3r" /><category term="configuration" /><category term="setup" /><summary type="html">Configuration assistant for initial setup of Slic3r</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Design a kayak rudder, part 1</title><link href="http://localhost:4000/blog/reprap-blender-rudder-part1/" rel="alternate" type="text/html" title="Design a kayak rudder, part 1" /><published>2019-12-12T11:27:00+01:00</published><updated>2019-12-12T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-blender-rudder-part1</id><content type="html" xml:base="http://localhost:4000/blog/reprap-blender-rudder-part1/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;Creating complex forms in &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt; that involves twisting, dragging or otherwise distorting a basic shape is tricky to do using scripting. Instead you attach a lattice over your original form and then interactively massage individual, or grouped, nodes from the lattice and the original form will follow. In this tutorial I show how to create a rudder for a kayak starting from a cylinder.&lt;/p&gt;
+
+&lt;h2 id=&quot;start-blender-with-clean-view&quot;&gt;Start Blender with clean view&lt;/h2&gt;
+
+&lt;p&gt;Start &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt; (in my case Blender276.app - see &lt;a href=&quot;../reprap-software/&quot;&gt;previous&lt;/a&gt; post).&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/blender-rudder01.png&quot; /&gt;
+&lt;figcaption&gt; Initial GUI of Blender, object(s) in orange are active. &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;For the first part of this manual the 3D viewer mode must be set to &lt;em&gt;Object mode&lt;/em&gt;. Just below the 3D viewing area you should see the text &lt;em&gt;Object mode&lt;/em&gt; (illustrated in figure 2).&lt;/p&gt;
+
+&lt;p&gt;Sequentially remove the objects in the 3D view. Click on the object to remove (either in the 3D view or in the object frame at the top of the column to the right of the 3D view). The selected object turns orange. If you do not manage to select an object, you can use the &lt;em&gt;Select&lt;/em&gt; menu and its options towards the GUI bottom left (see figure 2).&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/blender-rudder02.png&quot; /&gt;
+&lt;figcaption&gt; Alternative select methods under the Select menu. &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;With the object selected move the cursor to the 3d view (do not click the cursor, it just has to be &lt;em&gt;in&lt;/em&gt; the 3D view), click the &lt;em&gt;Delete&lt;/em&gt;+&lt;em&gt;function&lt;/em&gt; (&lt;em&gt;&amp;lt;–&lt;/em&gt;+&lt;em&gt;fn&lt;/em&gt;) keys simultaneously, and a small confirmation box should pop up in the 3D view (see figure below).&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/blender-rudder03.png&quot; /&gt;
+&lt;figcaption&gt; To delete an object first select it then press fn+del keys at the same time with the cursor in the 3D view. &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;add-basic-form&quot;&gt;Add basic form&lt;/h2&gt;
+
+&lt;p&gt;With a clean 3d view, change the left column to &lt;em&gt;Create&lt;/em&gt; from the vertical tabs along the very left margin. If you want the object to be exactly at the center, simultaneoulsy click &lt;em&gt;shift&lt;/em&gt;+&lt;em&gt;S&lt;/em&gt; keys and select the option &lt;em&gt;Cursor to Center&lt;/em&gt;.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/blender-rudder04.png&quot; /&gt;
+&lt;figcaption&gt; Click _shift_+_S_ keys to position the cursor. &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Add the basic form you want to use to start with. In the example below I have added a cylinder.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/blender-rudder05.png&quot; /&gt;
+&lt;figcaption&gt; Add the basic form you want to start with. &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;position-your-basic-shape&quot;&gt;Position your basic shape&lt;/h2&gt;
+
+&lt;p&gt;This step is not strictly necessary, you can always do it as a post-processing step. But I think it is easier to do it now. The things you need to consider is object position and size. Ideally you want to construct your 3D object so that it can be directly transferred to your 3D printer. This means that the bottom (of your future printed 3D item) should be where Z = 0. In my case I want to print the rudder in 2 halves, and I thus need to rotate the cylinder 90 degrees around either the x or the y axis. Make sure the cylinder is the selected object, press the &lt;em&gt;R&lt;/em&gt; key, followed by the &lt;em&gt;X&lt;/em&gt; key, then type &lt;em&gt;90&lt;/em&gt; and hit return.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/blender-rudder06.png&quot; /&gt;
+&lt;figcaption&gt; Rotate the object by pressing the R key, followed by the axis around which you want to rotate and the degrees of the rotation movement. &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Similarily, if you want to change the size, just press the &lt;em&gt;S&lt;/em&gt; key, and enter a size factor. This affects all axis equally. To set different size factors on different axis hit the corresponding axis key (X,Y,Z) before entering the scale factor.&lt;/p&gt;
+
+&lt;h2 id=&quot;add-and-setup-lattice&quot;&gt;Add and setup lattice&lt;/h2&gt;
+
+&lt;p&gt;To add a new form, simultaneously press the &lt;em&gt;Shift&lt;/em&gt;+&lt;em&gt;A&lt;/em&gt; keys, and then select the basic shape you desire (&lt;em&gt;lattice&lt;/em&gt; in this tutorial). With the lattice selected, change its size (just press the &lt;em&gt;S&lt;/em&gt; key followed by a factor and then return) to fit the original object.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/blender-rudder07.png&quot; /&gt;
+&lt;figcaption&gt; Add lattice through pressing the Shift+A keys and then resize by pressing the S key. &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;With the lattice still selected, click the &lt;em&gt;Object Data&lt;/em&gt; button (looks like a small window frame - the blue button in the figure below) in the object menu (in the right column). In the menu that then appears you can set the node density in X(U), Y(V) and Z(W). In the example below I have added 2 nodes to U (total = 4) and 1 node to V (total = 3) for illustration purposes. I suggest that you add so that you get 4 or 5 nodes per axis.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/blender-rudder08.png&quot; /&gt;
+&lt;figcaption&gt; From the object menu select Object Data and set the number of nodes per axis of the lattice. &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p class=&quot;pull-right&quot;&gt;&lt;img src=&quot;../../images/blender-rudder09.png&quot; alt=&quot;blender-rudder09&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;attach-lattice-to-original-object&quot;&gt;Attach lattice to original object&lt;/h2&gt;
+
+&lt;p&gt;Select the original object (cylinder in the exampe) and click the &lt;em&gt;Object modifier&lt;/em&gt; button (the small spanner - blue in the example to the right) in the object menu.&lt;/p&gt;
+
+&lt;p&gt;The right column will change appearance and only contain a drop down menu for selecting &lt;em&gt;Add Modifier&lt;/em&gt;. Click and select &lt;em&gt;lattice&lt;/em&gt; from the overwhelming amount of alternatives, as shown below.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/blender-rudder10.png&quot; /&gt;
+&lt;figcaption&gt; Add modifier lattice to the basic shape (cylinder). &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p class=&quot;pull-right&quot;&gt;&lt;img src=&quot;../../images/blender-rudder11.png&quot; alt=&quot;blender-rudder11&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The chosen modifier &lt;em&gt;type&lt;/em&gt; shows up as a window with options below the drop down menu. In that small window there is one item for &lt;em&gt;Object&lt;/em&gt; (showing a small orange cube and an eye-dropper). Click on the cube, and a drop down list appears showing your alternavites. It should only contain one item, namely your &lt;em&gt;Lattice&lt;/em&gt; as shown to the right. Select it.&lt;/p&gt;
+
+&lt;h2 id=&quot;lattice-object-modifier&quot;&gt;Lattice object modifier&lt;/h2&gt;
+
+&lt;p&gt;To “activate” the attached lattice for transforming the underlying object (cylinder), you have to do two things: first select the lattice as the active object and then change the 3D view mode to &lt;em&gt;Edit mode&lt;/em&gt;. Illustrated in the figure below. The lattice will now show up as a a swarm of nodes.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/blender-rudder12.png&quot; /&gt;
+&lt;figcaption&gt; Activate the lattice transformation mode by selecting the lattice as the active object and change the 3D-view mode to Edit mode. &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p class=&quot;pull-right&quot;&gt;&lt;img src=&quot;../../images/blender-rudder13.png&quot; alt=&quot;blender-rudder13&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To actually use the lattice for transforming your object, you have to select one or more of the nodes, and then whatever you choose to do, will affect the selected nodes. Use the &lt;em&gt;Select&lt;/em&gt; menu to define how to select nodes, I prefer using the &lt;em&gt;Border Select&lt;/em&gt; option (also reached by just pressing the &lt;em&gt;B&lt;/em&gt; key). When selecting a new set of nodes, you first have to &lt;em&gt;(De)Select All&lt;/em&gt; (or press the &lt;em&gt;A&lt;/em&gt; key).&lt;/p&gt;
+
+&lt;p&gt;Selected nodes turn orange, and at the same time the transformation tool will show up. The default setting of the transformation tool is &lt;em&gt;Translate&lt;/em&gt;, indicated by arrowheads (illustrated in the image in the next section). Other alternatives are &lt;em&gt;Rotate&lt;/em&gt; and &lt;em&gt;Scale&lt;/em&gt; (explained further down).&lt;/p&gt;
+
+&lt;h2 id=&quot;transform-along-axis&quot;&gt;Transform along axis&lt;/h2&gt;
+
+&lt;p&gt;The form I want to create is a typical rodder shape - a bit thicker towards the bow (where it is attached to the hull) and getting thinner towards the stern. As I have placed my cylinder that means I need to drag my object to become thinner along the y-axis. I thus select all nodes on either side of the x-axis and then &lt;em&gt;Translate&lt;/em&gt; the lattice by pulling the selected nodes with the y-axis arrow. The underlying form follows along.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/blender-rudder14.png&quot; /&gt;
+&lt;figcaption&gt; Translate y-axis by pulling it out to a basic rudder shape. &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;scale&quot;&gt;Scale&lt;/h2&gt;
+
+&lt;p&gt;When pulling out (&lt;em&gt;Translate&lt;/em&gt;) the rudder towards the stern, the proportions between length and height become extortet. To fix that you need to &lt;em&gt;Scale&lt;/em&gt; the object along the axis where it is too short.&lt;/p&gt;
+
+&lt;p class=&quot;pull-left&quot;&gt;&lt;img src=&quot;../../images/blender-rudder15.png&quot; alt=&quot;blender-rudder15&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;To increase the height  select all the nodes in the lattice. Change from the &lt;em&gt;Translate&lt;/em&gt; tool (with arrowheads) to the &lt;em&gt;Scale tool&lt;/em&gt; (with cube heads) as illustrated to the left.&lt;/p&gt;
+
+&lt;p&gt;As I have placed my rudder (for 3D printing reasons), the height is along the x-axis. The figure below illustrates the &lt;em&gt;Scale&lt;/em&gt; function applied along the x-axis.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/blender-rudder16.png&quot; /&gt;
+&lt;figcaption&gt; Scale x-axis by the scale tool. &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;rotate&quot;&gt;Rotate&lt;/h2&gt;
+
+&lt;p&gt;The &lt;em&gt;Rotate tool&lt;/em&gt; rotates the selected nodes vis-á-vis each other. It is a bit tricky to use.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/blender-rudder17.png&quot; /&gt;
+&lt;figcaption&gt; Rotate tool. &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;finish-and-export&quot;&gt;Finish and export&lt;/h2&gt;
+
+&lt;p&gt;With the lattice modifier you can get quite far towards creating a kayak rudder. There are other tools you can use, but I will accept the result shown below. Select the rudder (cylinder) as the active object and then export it as an &lt;span class=&quot;file&quot;&gt;.obj&lt;/span&gt; file as shown below. In the next post I will show how to import the rudder to &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt; and cut it, all using Python scripting&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/blender-rudder18.png&quot; /&gt;
+&lt;figcaption&gt; Export the rudder as an obj file. &lt;/figcaption&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="reprap" /><category term="Blender" /><category term="lattice" /><summary type="html">Design a kayak rudder in Blender using lattice modifier</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Design a kayak rudder, part 2</title><link href="http://localhost:4000/blog/reprap-blender-rudder-part2/" rel="alternate" type="text/html" title="Design a kayak rudder, part 2" /><published>2019-12-12T11:27:00+01:00</published><updated>2019-12-12T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-blender-rudder-part2</id><content type="html" xml:base="http://localhost:4000/blog/reprap-blender-rudder-part2/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;In the &lt;a href=&quot;../reprap-blender-rudder-part1/&quot;&gt;previous&lt;/a&gt; post you created a kayak rudder using the &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt; GUI. In this post you will import the rudder to a new &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt; window. Then use Python scripting for adding a hole for fitting the steering axis and cut the rudder in two halves. This as the final rudder will be printed in 2 halves and then plastered together over the steering axis. You can also export the whole rudder, and print it one piece.&lt;/p&gt;
+
+&lt;h2 id=&quot;start-blender-with-clean-view&quot;&gt;Start Blender with clean view&lt;/h2&gt;
+
+&lt;p&gt;Start &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt; and &lt;a href=&quot;../reprap-blender-python-3d-render/&quot;&gt;open the scripting view as described in an earlier post&lt;/a&gt;. Copy the following script to the python text editor. Then just run the script as described in the &lt;a href=&quot;../reprap-blender-python-3d-render/&quot;&gt;same post linked above&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import bpy
+import sys
+from math import radians,sin,asin,cos,atan,tan,sqrt
+
+#from xml.dom import minidom
+
+def CleanOb(ob):
+    bpy.context.scene.objects.active = ob
+    bpy.ops.object.mode_set(mode='EDIT')
+    bpy.ops.mesh.remove_doubles()
+    bpy.ops.object.mode_set(mode='OBJECT')
+    return
+
+def UnionObs(primOb,secOb):
+    bpy.context.scene.objects.active = primOb
+    boo = primOb.modifiers.new('BooU', 'BOOLEAN')
+    boo.object = secOb
+    boo.operation = 'UNION'
+    bpy.ops.object.modifier_apply(apply_as='DATA', modifier=&quot;BooU&quot;)
+    bpy.context.scene.objects.unlink(secOb)
+    CleanOb(primOb)
+
+def DiffObs(primOb,secOb):
+    bpy.context.scene.objects.active = primOb
+    boo = primOb.modifiers.new('BooD', 'BOOLEAN')
+    boo.object = secOb
+    boo.operation = 'DIFFERENCE'
+    bpy.ops.object.modifier_apply(apply_as='DATA', modifier=&quot;BooD&quot;)
+    bpy.context.scene.objects.unlink(secOb)
+    CleanOb(primOb)
+
+def IntersectObs(primOb,secOb):
+    bpy.context.scene.objects.active = primOb
+    boo = primOb.modifiers.new('BooI', 'BOOLEAN')
+    boo.object = secOb
+    boo.operation = 'INTERSECT'
+    bpy.ops.object.modifier_apply(apply_as='DATA', modifier=&quot;BooI&quot;)
+    bpy.context.scene.objects.unlink(secOb)
+    CleanOb(primOb)
+
+##### Set fixed parameters
+# defualt rotation
+rotation = (0,0,0)
+
+#create a clean scene
+bpy.ops.object.select_all(action='SELECT')
+bpy.ops.object.delete()
+
+#set units
+bpy.types.UnitSettings.system = 'METRIC'
+bpy.types.UnitSettings.scale_length = 0.001
+
+#set scene units
+scn=bpy.context.scene
+
+#bpy.data.scenes[0].UnitSettings.system = 'METRIC'
+bpy.data.scenes[0].unit_settings.scale_length = 0.001
+#Positions
+
+
+#Import rudder
+rudderFPN = '/Users/thomasgumbricht/docs-local/STL_models/2019/vkv-anita-k2-roder_v04.obj'
+bpy.ops.import_scene.obj(filepath=rudderFPN)
+rudder_ob = bpy.context.selected_objects[0] ####&amp;lt;--Fix
+#rudder_ob = bpy.context.object
+
+##### create the objects
+'''
+#Bottom plate for printing
+bpy.ops.mesh.primitive_cylinder_add(radius=15, depth=2, location=(0,0,1), rotation=rotation)
+bottom_ob = bpy.context.object
+opt_ob = bpy.context.object
+#bpy.ops.transform.resize(value=(1, 1/0.76, 1))
+'''
+
+#The rectangular box for cutting negative z
+bpy.ops.mesh.primitive_cube_add(radius=2, location=(0,0,-2), rotation=rotation)
+neg_ob = bpy.context.object
+bpy.ops.transform.resize(value=(5, 5, 1))
+
+#remove the inner wall
+DiffObs(rudder_ob,neg_ob)
+
+FP = &quot;/Users/thomasgumbricht/docs-local/STL_models/2019/rudder_v04.ply&quot;
+bpy.ops.export_mesh.ply(filepath=FP)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="reprap" /><category term="Blender" /><category term="lattice" /><summary type="html">Cut rudder and add hole for sterring axis in Blender using Python scripting.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Python scripting in Blender</title><link href="http://localhost:4000/blog/reprap-blender-python-3d-render/" rel="alternate" type="text/html" title="Python scripting in Blender" /><published>2019-12-11T11:27:00+01:00</published><updated>2019-12-11T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-blender-python-3d-render</id><content type="html" xml:base="http://localhost:4000/blog/reprap-blender-python-3d-render/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;I use &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt; for creating 3D models that can later be printed as objects. The 3D models can be created interactively using the &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt; GUI, but I create most of my objects using Python scripting for controlling &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
+
+&lt;p&gt;You need to install a version of &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt; that can be used for Python scripting, detailed in the &lt;a href=&quot;../reprap-software/&quot;&gt;previous&lt;/a&gt; post.&lt;/p&gt;
+
+&lt;h2 id=&quot;blender&quot;&gt;Blender&lt;/h2&gt;
+
+&lt;p&gt;Start &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt; (in my case Blender276.app).&lt;/p&gt;
+
+&lt;p&gt;To run &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt; using Python you have to change the &lt;em&gt;Screen Layout&lt;/em&gt; from &lt;em&gt;Default&lt;/em&gt; to &lt;em&gt;Scripting&lt;/em&gt;, as shown in the image below.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/blender-python01.png&quot; /&gt;
+&lt;figcaption&gt; Blender GUI, change screen layout from Default to Scripting.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The GUI changes and the canvas area gets divided into a script and a canvas area. Below the empty script area, click the &lt;em&gt;New&lt;/em&gt; option and then &lt;em&gt;Create a new text data block&lt;/em&gt;. Illustrated in the figure below.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/blender-python02.png&quot; /&gt;
+&lt;figcaption&gt; Blender GUI, initialise text scripting.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Now you can write your Python code in the text editor area. For the example figure below, add the following script:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;'''
+Created on 14 feb 2012
+
+@author: thomasg
+import scipy
+
+'''
+import sys
+
+import bpy
+
+from math import radians,sin,cos
+
+#create a clean scene
+bpy.ops.object.select_all(action='SELECT')
+bpy.ops.object.delete()
+#scaleF is for converting all measures
+scaleF = 0.5
+
+radiusOut = 16.4
+depthOut = 40
+#locationOut = (radiusOut*scaleF,radiusOut*scaleF,depthOut*scaleF/2)
+locationOut = (0,0,depthOut*scaleF/2)
+rotation = (0,0,0)
+bpy.ops.mesh.primitive_cylinder_add(radius=radiusOut*scaleF, depth=depthOut*scaleF, location=locationOut, rotation=rotation)
+outcyl_ob = bpy.context.object
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then run the script from the menu below the text editor window, illustrated in the figure below. You should then get the cylinder as shown in the canvas area on the figure.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/blender-python03.png&quot; /&gt;
+&lt;figcaption&gt; Blender GUI, run python script.&lt;/figcaption&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="reprap" /><category term="software" /><category term="Blender" /><category term="Meshmixer" /><category term="repetier-host" /><summary type="html">How to control Blender through Python scripting</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
