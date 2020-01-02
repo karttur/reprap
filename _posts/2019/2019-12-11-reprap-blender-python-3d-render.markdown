@@ -73,9 +73,81 @@ bpy.ops.mesh.primitive_cylinder_add(radius=radiusOut*scaleF, depth=depthOut*scal
 outcyl_ob = bpy.context.object
 ```
 
-Then run the script from the menu below the text editor window, illustrated in the figure below. You should then get the cylinder as shown in the canvas area on the figure.
+Then run the script from the menu below the text editor window, illustrated in the figure below.
+
+<span class='menu'>Text -> Run Script</span>
+
+You should then get the cylinder as shown in the canvas area on the figure.
 
 <figure>
 <img src="../../images/blender-python03.png">
 <figcaption> Blender GUI, run python script.</figcaption>
 </figure>
+
+## Default Python code
+
+When I design and create my own 3D objects using Python and <span class='app'>Blender</span>I start with importing the required packages (_bpy_ and _sys_) and some _math_ routines. I then define the scene clean all default items in the scene and set the units.
+
+When designing using Python I primarily use basic shapes (e.g. mesh, cube, circle, cylinder, cone, torus etc) and then reshape these using scripting. The moulding of the basic shapes into the shapes I want is cone individually. But then I often use the moulded objects for either cutting out pieces from or adding to, existing objects. To facilitate that I have defined three functions: _CleanOb_, _UnionObs_ and _DiffObs_.
+
+Starting any design project, I thus use the following code:
+
+```
+import bpy
+import sys
+from math import radians,sin,asin,cos,atan,tan,sqrt
+
+#from xml.dom import minidom
+
+def CleanOb(ob):
+    bpy.context.scene.objects.active = ob
+    bpy.ops.object.mode_set(mode='EDIT')
+    bpy.ops.mesh.remove_doubles()
+    bpy.ops.object.mode_set(mode='OBJECT')
+    return
+
+def UnionObs(primOb,secOb):
+    bpy.context.scene.objects.active = primOb
+    boo = primOb.modifiers.new('BooU', 'BOOLEAN')
+    boo.object = secOb
+    boo.operation = 'UNION'
+    bpy.ops.object.modifier_apply(apply_as='DATA', modifier="BooU")
+    bpy.context.scene.objects.unlink(secOb)
+    CleanOb(primOb)
+
+def DiffObs(primOb,secOb):
+    bpy.context.scene.objects.active = primOb
+    boo = primOb.modifiers.new('BooD', 'BOOLEAN')
+    boo.object = secOb
+    boo.operation = 'DIFFERENCE'
+    bpy.ops.object.modifier_apply(apply_as='DATA', modifier="BooD")
+    bpy.context.scene.objects.unlink(secOb)
+    CleanOb(primOb)
+
+def IntersectObs(primOb,secOb):
+    bpy.context.scene.objects.active = primOb
+    boo = primOb.modifiers.new('BooI', 'BOOLEAN')
+    boo.object = secOb
+    boo.operation = 'INTERSECT'
+    bpy.ops.object.modifier_apply(apply_as='DATA', modifier="BooI")
+    bpy.context.scene.objects.unlink(secOb)
+    CleanOb(primOb)
+
+##### Set fixed parameters
+# defualt rotation
+rotation = (0,0,0)
+
+#create a clean scene
+bpy.ops.object.select_all(action='SELECT')
+bpy.ops.object.delete()
+
+#set units
+bpy.types.UnitSettings.system = 'METRIC'
+bpy.types.UnitSettings.scale_length = 0.001
+
+#set scene units
+scn=bpy.context.scene
+
+#bpy.data.scenes[0].UnitSettings.system = 'METRIC'
+bpy.data.scenes[0].unit_settings.scale_length = 0.001
+```

@@ -191,7 +191,7 @@
 <figcaption> Click _shift_+_S_ keys to position the cursor. </figcaption>
 </figure>
 
-<p>Add the basic form you want to use to start with. In the example below I have added a cylinder.</p>
+<p>Add the basic form you want to use to start with. In the example below I have added a cylinder. In the left column, below the list of basic shapes, the default parameters set for the shape you select appear: <em>Vertices</em>, <em>Radius</em>, <em>Depth</em>, <em>Cap Fill Type</em>, <em>Align to View</em>, <em>Location</em> and <em>Rotation</em>. You can alter these parameters directly, or us the short keys and enter codes/numbers as described in the the next session.</p>
 
 <figure>
 <img src="../../images/blender-rudder05.png" />
@@ -200,47 +200,52 @@
 
 <h2 id="position-your-basic-shape">Position your basic shape</h2>
 
-<p>This step is not strictly necessary, you can always do it as a post-processing step. But I think it is easier to do it now. The things you need to consider is object position and size. Ideally you want to construct your 3D object so that it can be directly transferred to your 3D printer. This means that the bottom (of your future printed 3D item) should be where Z = 0. In my case I want to print the rudder in 2 halves, and I thus need to rotate the cylinder 90 degrees around either the x or the y axis. Make sure the cylinder is the selected object, press the <em>R</em> key, followed by the <em>X</em> key, then type <em>90</em> and hit return.</p>
+<p>This step is not strictly necessary, you can always do it as a post-processing step. But I think it is easier to do it now. The things you need to consider is object position and size. Ideally you want to construct your 3D object so that it can be directly transferred to your 3D printer. This means that the bottom (of your future printed 3D item) should be where Z = 0. In my case I want to print the rudder in 2 halves, and I thus need to rotate the cylinder 90 degrees around either the x or the y axis. Make sure the cylinder is the selected object, press the <em>R</em> key, followed by the <em>X</em> key, then type <em>90</em> and hit return. Alternatively just write <em>90</em> for the parameter <em>Rotation</em> -&gt; <em>X</em> in the left column.</p>
 
 <figure>
 <img src="../../images/blender-rudder06.png" />
-<figcaption> Rotate the object by pressing the R key, followed by the axis around which you want to rotate and the degrees of the rotation movement. </figcaption>
+<figcaption> Rotate the object by pressing the R key, followed by the axis around which you want to rotate and the degrees of the rotation movement. Or enter the rotation in the left column and the object will rotate interactively.</figcaption>
 </figure>
 
-<p>Similarily, if you want to change the size, just press the <em>S</em> key, and enter a size factor. This affects all axis equally. To set different size factors on different axis hit the corresponding axis key (X,Y,Z) before entering the scale factor.</p>
-
-<h2 id="add-and-setup-lattice">Add and setup lattice</h2>
-
-<p>To add a new form, simultaneously press the <em>Shift</em>+<em>A</em> keys, and then select the basic shape you desire (<em>lattice</em> in this tutorial). With the lattice selected, change its size (just press the <em>S</em> key followed by a factor and then return) to fit the original object.</p>
+<p>Similarily, if you want to change the size, just press the <em>S</em> key, and enter a size factor. This affects all axis equally. To set different size factors on different axis hit the corresponding axis key (X,Y,Z) before entering the scale factor. You can nonly change one axis at a time. As the rudder form will be elliptic, you can create a more elliptic shape by increasing <em>Y</em> and <em>X</em> and leave <em>Z</em>. In the example below I have set both <em>X</em> and <em>Y</em> to a factor of 3.</p>
 
 <figure>
 <img src="../../images/blender-rudder07.png" />
-<figcaption> Add lattice through pressing the Shift+A keys and then resize by pressing the S key. </figcaption>
+<figcaption> Resize the object by pressing the S key, followed by the axis around which you want to change the size and enter a size factor to apply.</figcaption>
+</figure>
+
+<h2 id="add-and-setup-lattice">Add and setup lattice</h2>
+
+<p>To add a new form, simultaneously press the <em>Shift</em>+<em>A</em> keys, and then select the basic shape you desire (<em>lattice</em> in this tutorial). With the lattice selected, change its size (press the <em>S</em> key followed by the axis a factor and then return) to fit the original object. if you changed the size of the original object you have to make similar changes to the lattice size.</p>
+
+<figure>
+<img src="../../images/blender-rudder08.png" />
+<figcaption> Add lattice through pressing the Shift+A keys and then resize by pressing the S key. The lattice should fit the oblect you want to transform. </figcaption>
 </figure>
 
 <p>With the lattice still selected, click the <em>Object Data</em> button (looks like a small window frame - the blue button in the figure below) in the object menu (in the right column). In the menu that then appears you can set the node density in X(U), Y(V) and Z(W). In the example below I have added 2 nodes to U (total = 4) and 1 node to V (total = 3) for illustration purposes. I suggest that you add so that you get 4 or 5 nodes per axis.</p>
 
 <figure>
-<img src="../../images/blender-rudder08.png" />
+<img src="../../images/blender-rudder09.png" />
 <figcaption> From the object menu select Object Data and set the number of nodes per axis of the lattice. </figcaption>
 </figure>
 
-<p class="pull-right"><img src="../../images/blender-rudder09.png" alt="blender-rudder09" /></p>
-
 <h2 id="attach-lattice-to-original-object">Attach lattice to original object</h2>
 
-<p>Select the original object (cylinder in the exampe) and click the <em>Object modifier</em> button (the small spanner - blue in the example to the right) in the object menu.</p>
+<p class="pull-right"><img src="../../images/blender-rudder10.png" alt="blender-rudder10" /></p>
+
+<p>Select the original object (cylinder in the example) and click the <em>Object modifier</em> button (the small spanner - blue in the example to the right) in the object menu.</p>
 
 <p>The right column will change appearance and only contain a drop down menu for selecting <em>Add Modifier</em>. Click and select <em>lattice</em> from the overwhelming amount of alternatives, as shown below.</p>
 
 <figure>
-<img src="../../images/blender-rudder10.png" />
+<img src="../../images/blender-rudder11.png" />
 <figcaption> Add modifier lattice to the basic shape (cylinder). </figcaption>
 </figure>
 
-<p class="pull-right"><img src="../../images/blender-rudder11.png" alt="blender-rudder11" /></p>
+<p class="pull-right"><img src="../../images/blender-rudder12.png" alt="blender-rudder11" /></p>
 
-<p>The chosen modifier <em>type</em> shows up as a window with options below the drop down menu. In that small window there is one item for <em>Object</em> (showing a small orange cube and an eye-dropper). Click on the cube, and a drop down list appears showing your alternavites. It should only contain one item, namely your <em>Lattice</em> as shown to the right. Select it.</p>
+<p>The chosen modifier <em>type</em> shows up as a window with options below the drop down menu. In that small window there is one item for <em>Object</em> (showing a small orange cube and an eye-dropper). Click on the cube, and a drop down list appears showing your alternatives. It should only contain one item, namely your <em>Lattice</em> as shown to the right. Select it.</p>
 
 <h2 id="lattice-object-modifier">Lattice object modifier</h2>
 
@@ -320,7 +325,7 @@
 	<h1 class='foot-title'>Geo Imagine Developer</h1>
 	<h2 class='foot-description'>script your own Earth</h2>
 </div>
-<span>&copy; 2019 Thomas Gumbricht. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/so-simple-jekyll-theme/" rel="nofollow">So Simple Theme</a>.</span>
+<span>&copy; 2020 Thomas Gumbricht. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/so-simple-jekyll-theme/" rel="nofollow">So Simple Theme</a>.</span>
 
 <div class="social-icons">
 	

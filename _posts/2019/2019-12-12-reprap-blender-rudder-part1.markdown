@@ -52,7 +52,7 @@ With a clean 3d view, change the left column to _Create_ from the vertical tabs 
 <figcaption> Click _shift_+_S_ keys to position the cursor. </figcaption>
 </figure>
 
-Add the basic form you want to use to start with. In the example below I have added a cylinder.
+Add the basic form you want to use to start with. In the example below I have added a cylinder. In the left column, below the list of basic shapes, the default parameters set for the shape you select appear: _Vertices_, _Radius_, _Depth_, _Cap Fill Type_, _Align to View_, _Location_ and _Rotation_. You can alter these parameters directly, or us the short keys and enter codes/numbers as described in the the next session.
 
 <figure>
 <img src="../../images/blender-rudder05.png">
@@ -61,49 +61,54 @@ Add the basic form you want to use to start with. In the example below I have ad
 
 ## Position your basic shape
 
-This step is not strictly necessary, you can always do it as a post-processing step. But I think it is easier to do it now. The things you need to consider is object position and size. Ideally you want to construct your 3D object so that it can be directly transferred to your 3D printer. This means that the bottom (of your future printed 3D item) should be where Z = 0. In my case I want to print the rudder in 2 halves, and I thus need to rotate the cylinder 90 degrees around either the x or the y axis. Make sure the cylinder is the selected object, press the _R_ key, followed by the _X_ key, then type _90_ and hit return.
+This step is not strictly necessary, you can always do it as a post-processing step. But I think it is easier to do it now. The things you need to consider is object position and size. Ideally you want to construct your 3D object so that it can be directly transferred to your 3D printer. This means that the bottom (of your future printed 3D item) should be where Z = 0. In my case I want to print the rudder in 2 halves, and I thus need to rotate the cylinder 90 degrees around either the x or the y axis. Make sure the cylinder is the selected object, press the _R_ key, followed by the _X_ key, then type _90_ and hit return. Alternatively just write _90_ for the parameter _Rotation_ -> _X_ in the left column.
 
 <figure>
 <img src="../../images/blender-rudder06.png">
-<figcaption> Rotate the object by pressing the R key, followed by the axis around which you want to rotate and the degrees of the rotation movement. </figcaption>
+<figcaption> Rotate the object by pressing the R key, followed by the axis around which you want to rotate and the degrees of the rotation movement. Or enter the rotation in the left column and the object will rotate interactively.</figcaption>
 </figure>
 
-Similarily, if you want to change the size, just press the _S_ key, and enter a size factor. This affects all axis equally. To set different size factors on different axis hit the corresponding axis key (X,Y,Z) before entering the scale factor.
-
-## Add and setup lattice
-
-To add a new form, simultaneously press the _Shift_+_A_ keys, and then select the basic shape you desire (_lattice_ in this tutorial). With the lattice selected, change its size (just press the _S_ key followed by a factor and then return) to fit the original object.
+Similarily, if you want to change the size, just press the _S_ key, and enter a size factor. This affects all axis equally. To set different size factors on different axis hit the corresponding axis key (X,Y,Z) before entering the scale factor. You can nonly change one axis at a time. As the rudder form will be elliptic, you can create a more elliptic shape by increasing _Y_ and _X_ and leave _Z_. In the example below I have set both _X_ and _Y_ to a factor of 3.
 
 <figure>
 <img src="../../images/blender-rudder07.png">
-<figcaption> Add lattice through pressing the Shift+A keys and then resize by pressing the S key. </figcaption>
+<figcaption> Resize the object by pressing the S key, followed by the axis around which you want to change the size and enter a size factor to apply.</figcaption>
+</figure>
+
+## Add and setup lattice
+
+To add a new form, simultaneously press the _Shift_+_A_ keys, and then select the basic shape you desire (_lattice_ in this tutorial). With the lattice selected, change its size (press the _S_ key followed by the axis a factor and then return) to fit the original object. if you changed the size of the original object you have to make similar changes to the lattice size.
+
+<figure>
+<img src="../../images/blender-rudder08.png">
+<figcaption> Add lattice through pressing the Shift+A keys and then resize by pressing the S key. The lattice should fit the oblect you want to transform. </figcaption>
 </figure>
 
 With the lattice still selected, click the _Object Data_ button (looks like a small window frame - the blue button in the figure below) in the object menu (in the right column). In the menu that then appears you can set the node density in X(U), Y(V) and Z(W). In the example below I have added 2 nodes to U (total = 4) and 1 node to V (total = 3) for illustration purposes. I suggest that you add so that you get 4 or 5 nodes per axis.
 
 <figure>
-<img src="../../images/blender-rudder08.png">
+<img src="../../images/blender-rudder09.png">
 <figcaption> From the object menu select Object Data and set the number of nodes per axis of the lattice. </figcaption>
 </figure>
 
-![blender-rudder09](../../images/blender-rudder09.png)
-{: .pull-right}
-
 ## Attach lattice to original object
 
-Select the original object (cylinder in the exampe) and click the _Object modifier_ button (the small spanner - blue in the example to the right) in the object menu.
+![blender-rudder10](../../images/blender-rudder10.png)
+{: .pull-right}
+
+Select the original object (cylinder in the example) and click the _Object modifier_ button (the small spanner - blue in the example to the right) in the object menu.
 
 The right column will change appearance and only contain a drop down menu for selecting _Add Modifier_. Click and select _lattice_ from the overwhelming amount of alternatives, as shown below.
 
 <figure>
-<img src="../../images/blender-rudder10.png">
+<img src="../../images/blender-rudder11.png">
 <figcaption> Add modifier lattice to the basic shape (cylinder). </figcaption>
 </figure>
 
-![blender-rudder11](../../images/blender-rudder11.png)
+![blender-rudder11](../../images/blender-rudder12.png)
 {: .pull-right}
 
-The chosen modifier _type_ shows up as a window with options below the drop down menu. In that small window there is one item for _Object_ (showing a small orange cube and an eye-dropper). Click on the cube, and a drop down list appears showing your alternavites. It should only contain one item, namely your _Lattice_ as shown to the right. Select it.
+The chosen modifier _type_ shows up as a window with options below the drop down menu. In that small window there is one item for _Object_ (showing a small orange cube and an eye-dropper). Click on the cube, and a drop down list appears showing your alternatives. It should only contain one item, namely your _Lattice_ as shown to the right. Select it.
 
 ## Lattice object modifier
 
