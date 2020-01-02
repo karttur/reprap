@@ -105,7 +105,7 @@ The right column will change appearance and only contain a drop down menu for se
 <figcaption> Add modifier lattice to the basic shape (cylinder). </figcaption>
 </figure>
 
-![blender-rudder11](../../images/blender-rudder12.png)
+![blender-rudder12](../../images/blender-rudder12.png)
 {: .pull-right}
 
 The chosen modifier _type_ shows up as a window with options below the drop down menu. In that small window there is one item for _Object_ (showing a small orange cube and an eye-dropper). Click on the cube, and a drop down list appears showing your alternatives. It should only contain one item, namely your _Lattice_ as shown to the right. Select it.
@@ -115,7 +115,7 @@ The chosen modifier _type_ shows up as a window with options below the drop down
 To "activate" the attached lattice for transforming the underlying object (cylinder), you have to do two things: first select the lattice as the active object and then change the 3D view mode to _Edit mode_. Illustrated in the figure below. The lattice will now show up as a a swarm of nodes.
 
 <figure>
-<img src="../../images/blender-rudder12.png">
+<img src="../../images/blender-rudder13.png">
 <figcaption> Activate the lattice transformation mode by selecting the lattice as the active object and change the 3D-view mode to Edit mode. </figcaption>
 </figure>
 

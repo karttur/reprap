@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-02T17:04:02+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Geo Imagine Developer</title><subtitle>script your own Earth</subtitle><entry><title type="html">Slic3r Printer settings</title><link href="http://localhost:4000/blog/reprap-slic3r-config-printer/" rel="alternate" type="text/html" title="Slic3r Printer settings" /><published>2019-12-17T11:27:00+01:00</published><updated>2019-12-17T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-slic3r-config-printer</id><content type="html" xml:base="http://localhost:4000/blog/reprap-slic3r-config-printer/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-02T17:34:09+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Geo Imagine Developer</title><subtitle>script your own Earth</subtitle><entry><title type="html">Slic3r Printer settings</title><link href="http://localhost:4000/blog/reprap-slic3r-config-printer/" rel="alternate" type="text/html" title="Slic3r Printer settings" /><published>2019-12-17T11:27:00+01:00</published><updated>2019-12-17T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-slic3r-config-printer</id><content type="html" xml:base="http://localhost:4000/blog/reprap-slic3r-config-printer/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
 &lt;p&gt;For each filament material and diameter, as well as nozzle diameter, you have to define different parameter for &lt;strong&gt;print settings&lt;/strong&gt; (&lt;a href=&quot;../reprap-slic3r-config-print&quot;&gt;pre-previous post&lt;/a&gt;), &lt;strong&gt;filament settings&lt;/strong&gt; (&lt;a href=&quot;../reprap-slic3r-config-filament&quot;&gt;previous post&lt;/a&gt;) and/or &lt;strong&gt;printing settings&lt;/strong&gt; (this post).&lt;/p&gt;
 
@@ -379,7 +379,7 @@
 &lt;figcaption&gt; Add modifier lattice to the basic shape (cylinder). &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p class=&quot;pull-right&quot;&gt;&lt;img src=&quot;../../images/blender-rudder12.png&quot; alt=&quot;blender-rudder11&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;pull-right&quot;&gt;&lt;img src=&quot;../../images/blender-rudder12.png&quot; alt=&quot;blender-rudder12&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The chosen modifier &lt;em&gt;type&lt;/em&gt; shows up as a window with options below the drop down menu. In that small window there is one item for &lt;em&gt;Object&lt;/em&gt; (showing a small orange cube and an eye-dropper). Click on the cube, and a drop down list appears showing your alternatives. It should only contain one item, namely your &lt;em&gt;Lattice&lt;/em&gt; as shown to the right. Select it.&lt;/p&gt;
 
@@ -388,7 +388,7 @@
 &lt;p&gt;To “activate” the attached lattice for transforming the underlying object (cylinder), you have to do two things: first select the lattice as the active object and then change the 3D view mode to &lt;em&gt;Edit mode&lt;/em&gt;. Illustrated in the figure below. The lattice will now show up as a a swarm of nodes.&lt;/p&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;../../images/blender-rudder12.png&quot; /&gt;
+&lt;img src=&quot;../../images/blender-rudder13.png&quot; /&gt;
 &lt;figcaption&gt; Activate the lattice transformation mode by selecting the lattice as the active object and change the 3D-view mode to Edit mode. &lt;/figcaption&gt;
 &lt;/figure&gt;
 
