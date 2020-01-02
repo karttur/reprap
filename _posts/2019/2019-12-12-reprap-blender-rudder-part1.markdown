@@ -161,7 +161,7 @@ The _Rotate tool_ rotates the selected nodes vis-á-vis each other. It is a bit 
 
 ## Finish and export
 
-With the lattice modifier you can get quite far towards creating a kayak rudder. There are other tools you can use, but I will accept the result shown below. Select the rudder (cylinder) as the active object and then export it as an <span class='file'>.obj</span> file as shown below. In the next post I will show how to import the rudder to <span class='app'>Blender</span> and cut it, all using Python scripting
+With the lattice modifier you can get quite far towards creating a kayak rudder. There are other tools you can use, but I will accept the result shown below. Select the rudder (cylinder) as the active object and then export it as an <span class='file'>.obj</span> file as shown below. In the next post I will show how to import the rudder to <span class='app'>Blender</span> and cut it in two halves, all using Python scripting.
 
 <figure>
 <img src="../../images/blender-rudder18.png">

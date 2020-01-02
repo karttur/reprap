@@ -8,7 +8,7 @@
   include: 'N'
 
 - title: RepRap Blog
-  url: /draft/
+  url: /blog/
   include: 'N'
 
 - title: Search
