@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-02T17:34:09+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Geo Imagine Developer</title><subtitle>script your own Earth</subtitle><entry><title type="html">Slic3r Printer settings</title><link href="http://localhost:4000/blog/reprap-slic3r-config-printer/" rel="alternate" type="text/html" title="Slic3r Printer settings" /><published>2019-12-17T11:27:00+01:00</published><updated>2019-12-17T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-slic3r-config-printer</id><content type="html" xml:base="http://localhost:4000/blog/reprap-slic3r-config-printer/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-02T18:09:37+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Geo Imagine Developer</title><subtitle>script your own Earth</subtitle><entry><title type="html">Slic3r Printer settings</title><link href="http://localhost:4000/blog/reprap-slic3r-config-printer/" rel="alternate" type="text/html" title="Slic3r Printer settings" /><published>2019-12-17T11:27:00+01:00</published><updated>2019-12-17T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-slic3r-config-printer</id><content type="html" xml:base="http://localhost:4000/blog/reprap-slic3r-config-printer/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
 &lt;p&gt;For each filament material and diameter, as well as nozzle diameter, you have to define different parameter for &lt;strong&gt;print settings&lt;/strong&gt; (&lt;a href=&quot;../reprap-slic3r-config-print&quot;&gt;pre-previous post&lt;/a&gt;), &lt;strong&gt;filament settings&lt;/strong&gt; (&lt;a href=&quot;../reprap-slic3r-config-filament&quot;&gt;previous post&lt;/a&gt;) and/or &lt;strong&gt;printing settings&lt;/strong&gt; (this post).&lt;/p&gt;
 
@@ -343,7 +343,7 @@
 &lt;figcaption&gt; Rotate the object by pressing the R key, followed by the axis around which you want to rotate and the degrees of the rotation movement. Or enter the rotation in the left column and the object will rotate interactively.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Similarily, if you want to change the size, just press the &lt;em&gt;S&lt;/em&gt; key, and enter a size factor. This affects all axis equally. To set different size factors on different axis hit the corresponding axis key (X,Y,Z) before entering the scale factor. You can nonly change one axis at a time. As the rudder form will be elliptic, you can create a more elliptic shape by increasing &lt;em&gt;Y&lt;/em&gt; and &lt;em&gt;X&lt;/em&gt; and leave &lt;em&gt;Z&lt;/em&gt;. In the example below I have set both &lt;em&gt;X&lt;/em&gt; and &lt;em&gt;Y&lt;/em&gt; to a factor of 3.&lt;/p&gt;
+&lt;p&gt;Similarily, if you want to change the size, just press the &lt;em&gt;S&lt;/em&gt; key, and enter a size factor. This affects all axis equally. To set different size factors on different axis hit the corresponding axis key (X,Y,Z) before entering the scale factor. You can only change one axis at a time. As the rudder form will be elliptic, you can create a more elliptic shape by increasing &lt;em&gt;Y&lt;/em&gt; and &lt;em&gt;X&lt;/em&gt; and leave &lt;em&gt;Z&lt;/em&gt;. In the example below I have set both &lt;em&gt;X&lt;/em&gt; and &lt;em&gt;Y&lt;/em&gt; to a factor of 3.&lt;/p&gt;
 
 &lt;figure&gt;
 &lt;img src=&quot;../../images/blender-rudder07.png&quot; /&gt;
@@ -400,19 +400,19 @@
 
 &lt;h2 id=&quot;transform-along-axis&quot;&gt;Transform along axis&lt;/h2&gt;
 
-&lt;p&gt;The form I want to create is a typical rodder shape - a bit thicker towards the bow (where it is attached to the hull) and getting thinner towards the stern. As I have placed my cylinder that means I need to drag my object to become thinner along the y-axis. I thus select all nodes on either side of the x-axis and then &lt;em&gt;Translate&lt;/em&gt; the lattice by pulling the selected nodes with the y-axis arrow. The underlying form follows along.&lt;/p&gt;
+&lt;p&gt;The form I want to create is a typical rodder shape - a bit thicker towards the bow (where it is attached to the hull) and getting thinner towards the stern. As I have placed my cylinder that means I need to drag my object to become thinner along the x-axis. I thus select all nodes on either side of the y-axis and then &lt;em&gt;Translate&lt;/em&gt; the lattice by pulling the selected nodes with the xaxis arrow. The underlying form follows along.&lt;/p&gt;
 
 &lt;figure&gt;
 &lt;img src=&quot;../../images/blender-rudder14.png&quot; /&gt;
-&lt;figcaption&gt; Translate y-axis by pulling it out to a basic rudder shape. &lt;/figcaption&gt;
+&lt;figcaption&gt; Translate x-axis by pulling it out to a basic rudder shape. &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;h2 id=&quot;scale&quot;&gt;Scale&lt;/h2&gt;
 
-&lt;p&gt;When pulling out (&lt;em&gt;Translate&lt;/em&gt;) the rudder towards the stern, the proportions between length and height become extortet. To fix that you need to &lt;em&gt;Scale&lt;/em&gt; the object along the axis where it is too short.&lt;/p&gt;
+&lt;p&gt;When pulling out (&lt;em&gt;Translate&lt;/em&gt;) the rudder towards the stern, the proportions between length and height become skewed. To fix that you need to &lt;em&gt;Scale&lt;/em&gt; the object along the axis where it is too short.&lt;/p&gt;
 
 &lt;p class=&quot;pull-left&quot;&gt;&lt;img src=&quot;../../images/blender-rudder15.png&quot; alt=&quot;blender-rudder15&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;To increase the height  select all the nodes in the lattice. Change from the &lt;em&gt;Translate&lt;/em&gt; tool (with arrowheads) to the &lt;em&gt;Scale tool&lt;/em&gt; (with cube heads) as illustrated to the left.&lt;/p&gt;
+&lt;p&gt;To increase the height select all the nodes in the lattice. Change from the &lt;em&gt;Translate&lt;/em&gt; tool (with arrowheads) to the &lt;em&gt;Scale tool&lt;/em&gt; (with cube heads) as illustrated to the left.&lt;/p&gt;
 
 &lt;p&gt;As I have placed my rudder (for 3D printing reasons), the height is along the x-axis. The figure below illustrates the &lt;em&gt;Scale&lt;/em&gt; function applied along the x-axis.&lt;/p&gt;
 

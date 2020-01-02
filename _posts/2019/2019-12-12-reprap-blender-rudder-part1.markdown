@@ -68,7 +68,7 @@ This step is not strictly necessary, you can always do it as a post-processing s
 <figcaption> Rotate the object by pressing the R key, followed by the axis around which you want to rotate and the degrees of the rotation movement. Or enter the rotation in the left column and the object will rotate interactively.</figcaption>
 </figure>
 
-Similarily, if you want to change the size, just press the _S_ key, and enter a size factor. This affects all axis equally. To set different size factors on different axis hit the corresponding axis key (X,Y,Z) before entering the scale factor. You can nonly change one axis at a time. As the rudder form will be elliptic, you can create a more elliptic shape by increasing _Y_ and _X_ and leave _Z_. In the example below I have set both _X_ and _Y_ to a factor of 3.
+Similarily, if you want to change the size, just press the _S_ key, and enter a size factor. This affects all axis equally. To set different size factors on different axis hit the corresponding axis key (X,Y,Z) before entering the scale factor. You can only change one axis at a time. As the rudder form will be elliptic, you can create a more elliptic shape by increasing _Y_ and _X_ and leave _Z_. In the example below I have set both _X_ and _Y_ to a factor of 3.
 
 <figure>
 <img src="../../images/blender-rudder07.png">
@@ -128,20 +128,20 @@ Selected nodes turn orange, and at the same time the transformation tool will sh
 
 ## Transform along axis
 
-The form I want to create is a typical rodder shape - a bit thicker towards the bow (where it is attached to the hull) and getting thinner towards the stern. As I have placed my cylinder that means I need to drag my object to become thinner along the y-axis. I thus select all nodes on either side of the x-axis and then _Translate_ the lattice by pulling the selected nodes with the y-axis arrow. The underlying form follows along.
+The form I want to create is a typical rodder shape - a bit thicker towards the bow (where it is attached to the hull) and getting thinner towards the stern. As I have placed my cylinder that means I need to drag my object to become thinner along the x-axis. I thus select all nodes on either side of the y-axis and then _Translate_ the lattice by pulling the selected nodes with the xaxis arrow. The underlying form follows along.
 
 <figure>
 <img src="../../images/blender-rudder14.png">
-<figcaption> Translate y-axis by pulling it out to a basic rudder shape. </figcaption>
+<figcaption> Translate x-axis by pulling it out to a basic rudder shape. </figcaption>
 </figure>
 
 ## Scale
 
-When pulling out (_Translate_) the rudder towards the stern, the proportions between length and height become extortet. To fix that you need to _Scale_ the object along the axis where it is too short.
+When pulling out (_Translate_) the rudder towards the stern, the proportions between length and height become skewed. To fix that you need to _Scale_ the object along the axis where it is too short.
 
 ![blender-rudder15](../../images/blender-rudder15.png)
 {: .pull-left}
-To increase the height  select all the nodes in the lattice. Change from the _Translate_ tool (with arrowheads) to the _Scale tool_ (with cube heads) as illustrated to the left.
+To increase the height select all the nodes in the lattice. Change from the _Translate_ tool (with arrowheads) to the _Scale tool_ (with cube heads) as illustrated to the left.
 
 As I have placed my rudder (for 3D printing reasons), the height is along the x-axis. The figure below illustrates the _Scale_ function applied along the x-axis.
 
