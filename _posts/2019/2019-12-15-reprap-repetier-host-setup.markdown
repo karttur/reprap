@@ -55,7 +55,7 @@ Under the <span class='tab'>Behaviour</span> tab, you need to change the _Defaul
 
 #### Dimension
 
-The German RepRap PRotos V2 is a bit larger (230 mm) compared to the default (200 mm) settings of <span class='app'>Repetier-Host</span>.
+The German RepRap PRotos V2 is a bit larger (210-230 mm) compared to the default (200 mm) settings of <span class='app'>Repetier-Host</span>.
 
 <figure>
 <img src="../../images/repetier-printer-config-dimension.png">

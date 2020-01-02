@@ -7,7 +7,7 @@ tags:
   - reprap
   - Slic3r
   - configuration
-  - print setting
+  - filament setting
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 date: '2019-12-17 11:27'
 modified: '2019-12-17 11:27'

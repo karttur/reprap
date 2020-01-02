@@ -1,0 +1,20 @@
+# Site navigation links
+- title: Karttur
+  url: http://karttur.github.io
+  include: 'N'
+
+- title: Fount
+  url: /
+  include: 'N'
+
+- title: RepRap Blog
+  url: /draft/
+  include: 'N'
+
+- title: Search
+  url: /search/
+  include: 'N'
+
+- title: About
+  url: /about/
+  include: 'N'

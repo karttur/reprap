@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-29T23:07:26+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Geo Imagine Developer</title><subtitle>script your own Earth</subtitle><entry><title type="html">Slic3r Filament settings</title><link href="http://localhost:4000/blog/reprap-slic3r-config-filament/" rel="alternate" type="text/html" title="Slic3r Filament settings" /><published>2019-12-17T11:27:00+01:00</published><updated>2019-12-17T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-slic3r-config-filament</id><content type="html" xml:base="http://localhost:4000/blog/reprap-slic3r-config-filament/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-30T20:44:14+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Geo Imagine Developer</title><subtitle>script your own Earth</subtitle><entry><title type="html">Slic3r Printer settings</title><link href="http://localhost:4000/blog/reprap-slic3r-config-printer/" rel="alternate" type="text/html" title="Slic3r Printer settings" /><published>2019-12-17T11:27:00+01:00</published><updated>2019-12-17T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-slic3r-config-printer</id><content type="html" xml:base="http://localhost:4000/blog/reprap-slic3r-config-printer/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;For each filament material and diameter, as well as nozzle diameter, you have to define different parameter for &lt;strong&gt;print settings&lt;/strong&gt; (&lt;a href=&quot;../reprap-slic3r-config-print&quot;&gt;pre-previous post&lt;/a&gt;), &lt;strong&gt;filament settings&lt;/strong&gt; (&lt;a href=&quot;../reprap-slic3r-config-filament&quot;&gt;previous post&lt;/a&gt;) and/or &lt;strong&gt;printing settings&lt;/strong&gt; (this post).&lt;/p&gt;
+
+&lt;h2 id=&quot;prerequisits&quot;&gt;Prerequisits&lt;/h2&gt;
+
+&lt;p&gt;&lt;span class=&quot;app&quot;&gt;Slic3r&lt;/span&gt; is installed with &lt;span class=&quot;app&quot;&gt;Repetier-host&lt;/span&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;print-settings&quot;&gt;Print settings&lt;/h3&gt;
+
+&lt;p&gt;You get to the &lt;span class=&quot;app&quot;&gt;Slic3r&lt;/span&gt; page for print setting from the menu:&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;menu&quot;&gt;Settings -&amp;gt; Print Settings… &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;printer settings&lt;/strong&gt; is defined in 4 different pages.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;General&lt;/li&gt;
+  &lt;li&gt;Custom G-code&lt;/li&gt;
+  &lt;li&gt;Notes&lt;/li&gt;
+  &lt;li&gt;Extruder 1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But you only need to set the parameters of the last (&lt;em&gt;Extruder 1&lt;/em&gt;) page.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic3r-printer-settings-01.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Printer Settings, General.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic3r-printer-settings-02.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Printer Settings, Custom G-codes.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic3r-printer-settings-03.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Printer Settings, Notes.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/slic3r-printer-settings-04.png&quot; /&gt;
+&lt;figcaption&gt; Slic3r Printer Settings, Extruder 1.&lt;/figcaption&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="reprap" /><category term="Slic3r" /><category term="configuration" /><category term="printer setting" /><summary type="html">Configure printer setting in Slic3r</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Slic3r Filament settings</title><link href="http://localhost:4000/blog/reprap-slic3r-config-filament/" rel="alternate" type="text/html" title="Slic3r Filament settings" /><published>2019-12-17T11:27:00+01:00</published><updated>2019-12-17T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-slic3r-config-filament</id><content type="html" xml:base="http://localhost:4000/blog/reprap-slic3r-config-filament/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
 &lt;p&gt;For each filament material and diameter, as well as nozzle diameter, you have to define different parameter for &lt;strong&gt;print settings&lt;/strong&gt; (&lt;a href=&quot;../reprap-slic3r-config-print&quot;&gt;previous post&lt;/a&gt;), &lt;strong&gt;filament settings&lt;/strong&gt; (this post) and/or &lt;strong&gt;printing settings&lt;/strong&gt; ([next page(../reprap-slic3r-config-printing)]).&lt;/p&gt;
 
@@ -47,7 +90,7 @@
 &lt;figure&gt;
 &lt;img src=&quot;../../images/slic2r-filament-settings-05.png&quot; /&gt;
 &lt;figcaption&gt; Slic3r Filament Settings, Overrides.&lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="reprap" /><category term="Slic3r" /><category term="configuration" /><category term="print setting" /><summary type="html">Configure filament setting in Slic3r</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Print setting Slic3r</title><link href="http://localhost:4000/blog/reprap-slic3r-config-print/" rel="alternate" type="text/html" title="Print setting Slic3r" /><published>2019-12-16T11:27:00+01:00</published><updated>2019-12-16T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-slic3r-config-print</id><content type="html" xml:base="http://localhost:4000/blog/reprap-slic3r-config-print/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="reprap" /><category term="Slic3r" /><category term="configuration" /><category term="filament setting" /><summary type="html">Configure filament setting in Slic3r</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Print setting Slic3r</title><link href="http://localhost:4000/blog/reprap-slic3r-config-print/" rel="alternate" type="text/html" title="Print setting Slic3r" /><published>2019-12-16T11:27:00+01:00</published><updated>2019-12-16T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-slic3r-config-print</id><content type="html" xml:base="http://localhost:4000/blog/reprap-slic3r-config-print/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
 &lt;p&gt;For each filament material and diameter, as well as nozzle diameter, you have to define different parameters for &lt;strong&gt;print settings&lt;/strong&gt; (this post), &lt;strong&gt;filament settings&lt;/strong&gt; (&lt;a href=&quot;../reprap-slic3r-config-filament&quot;&gt;next page&lt;/a&gt;) and &lt;strong&gt;printing settings&lt;/strong&gt; (&lt;a href=&quot;../reprap-slic3r-config-printing&quot;&gt;page after next&lt;/a&gt;)&lt;/p&gt;
 
@@ -126,63 +169,7 @@
 &lt;figure&gt;
 &lt;img src=&quot;../../images/slic2r-print-settings-10.png&quot; /&gt;
 &lt;figcaption&gt; Slic3r Print Settings, Shortcuts.&lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="reprap" /><category term="Slic3r" /><category term="configuration" /><category term="print setting" /><summary type="html">Configure print setting in Slic3r</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Configure Repetier-Host</title><link href="http://localhost:4000/blog/reprap-repetier-host-setup/" rel="alternate" type="text/html" title="Configure Repetier-Host" /><published>2019-12-15T11:27:00+01:00</published><updated>2019-12-15T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-repetier-host-setup</id><content type="html" xml:base="http://localhost:4000/blog/reprap-repetier-host-setup/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;This post goes through the configurations required for connecting the &lt;a href=&quot;https://www.3ders.org/articles/20130722-german-reprap-launches-protos-v2-3d-printer.html&quot;&gt;German RepRap PRotos V2&lt;/a&gt; to the software &lt;a href=&quot;https://www.repetier.com&quot;&gt;Repetier&lt;/a&gt; on Mac OSX. The instructions follows the &lt;a href=&quot;https://www.repetier.com/documentation/repetier-host-mac/installation-and-connection/&quot;&gt;Repetier-Host Mac Documentation&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;repetier-host&quot;&gt;Repetier-Host&lt;/h2&gt;
-
-&lt;p&gt;Download and install &lt;a href=&quot;https://www.repetier.com/download-software/&quot;&gt;&lt;span class=&quot;app&quot;&gt;Repetier-Host&lt;/span&gt;&lt;/a&gt; as described in the &lt;a href=&quot;../reprap-software/&quot;&gt;previous post&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Start &lt;span class=&quot;app&quot;&gt;Repetier-Host&lt;/span&gt;. Get to &lt;em&gt;Printer Settings&lt;/em&gt; via the menu:&lt;/p&gt;
-
-&lt;p&gt;&lt;span class=&quot;menu&quot;&gt;Printer -&amp;gt; Printer Settings&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;or hit the [cmp]+[p] keys at the same time.&lt;/p&gt;
-
-&lt;h3 id=&quot;printer-settings&quot;&gt;Printer Settings&lt;/h3&gt;
-
-&lt;p&gt;In the Printer settings window, add a name of the configuration you want to create. You will need one configuration per printer per printing material. Thus, if you want to use different materials, you should set the name to reflect the material. In the example below I have called my configuration “PROTOS-V2-PLA”.&lt;/p&gt;
-
-&lt;h4 id=&quot;connection&quot;&gt;Connection&lt;/h4&gt;
-
-&lt;p&gt;if the &lt;em&gt;Connection&lt;/em&gt; is not correctly set, you will not be able to communicate with your printer. You have to give the &lt;em&gt;Port&lt;/em&gt;, and probably the &lt;em&gt;Baud Rate&lt;/em&gt; will differ comapred to the default. You need to check the documentation of your 3D-printer to get the correct &lt;em&gt;Baud Rate&lt;/em&gt;. The other parameters will most likely work by leaving the defaults.&lt;/p&gt;
-
-&lt;figure&gt;
-&lt;img src=&quot;../../images/repetier-printer-config-connection.png&quot; /&gt;
-&lt;figcaption&gt; Repetier-Host connection configuration for German RepRap PRotos V2.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;h4 id=&quot;behaviour&quot;&gt;Behaviour&lt;/h4&gt;
-
-&lt;p&gt;Under the &lt;span class=&quot;tab&quot;&gt;Behaviour&lt;/span&gt; tab, you need to change the &lt;em&gt;Default Extruder Temperature&lt;/em&gt; and the &lt;em&gt;Default heated bed temperature&lt;/em&gt;  to fit your printer, its heated bed and the material. The &lt;em&gt;Travel Feedrate&lt;/em&gt; depends on the extruder opening. The German RepRap PRotos V2 can travel at higher speed then the default. The smaller extruder (1.75 mm) can travel as fast as 10800 mm/min and the larger (3 mm) at 6000 mm/min.&lt;/p&gt;
-
-&lt;figure&gt;
-&lt;img src=&quot;../../images/repetier-printer-config-behaviour.png&quot; /&gt;
-&lt;figcaption&gt; Repetier-Host behaviour configuration for German RepRap PRotos V2, PLA material.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;h4 id=&quot;dimension&quot;&gt;Dimension&lt;/h4&gt;
-
-&lt;p&gt;The German RepRap PRotos V2 is a bit larger (230 mm) compared to the default (200 mm) settings of &lt;span class=&quot;app&quot;&gt;Repetier-Host&lt;/span&gt;.&lt;/p&gt;
-
-&lt;figure&gt;
-&lt;img src=&quot;../../images/repetier-printer-config-dimension.png&quot; /&gt;
-&lt;figcaption&gt; Repetier-Host behaviour configuration for German RepRap PRotos V2, PLA material.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;h4 id=&quot;advanced&quot;&gt;Advanced&lt;/h4&gt;
-
-&lt;p&gt;The advances settings can safely be left blanc.&lt;/p&gt;
-
-&lt;figure&gt;
-&lt;img src=&quot;../../images/repetier-printer-config-advanced.png&quot; /&gt;
-&lt;figcaption&gt; Repetier-Host behaviour configuration for German RepRap PRotos V2, PLA material.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;h4 id=&quot;done&quot;&gt;Done&lt;/h4&gt;
-
-&lt;p&gt;You should now be able to connect to your 3D-printer using &lt;span class=&quot;app&quot;&gt;Repetier-Host&lt;/span&gt;.&lt;/p&gt;</content><author><name></name></author><category term="reprap" /><category term="software" /><category term="Repetier" /><category term="repetier-host" /><category term="German RepRap Protos V2" /><category term="configuration" /><summary type="html">Configure Repetier-Host Mac for printing with the German RepRap PRotos V2</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Slic3r Configuration assistant</title><link href="http://localhost:4000/blog/reprap-slic3r-config-assist/" rel="alternate" type="text/html" title="Slic3r Configuration assistant" /><published>2019-12-15T11:27:00+01:00</published><updated>2019-12-15T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-slic3r-config-assist</id><content type="html" xml:base="http://localhost:4000/blog/reprap-slic3r-config-assist/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="reprap" /><category term="Slic3r" /><category term="configuration" /><category term="print setting" /><summary type="html">Configure print setting in Slic3r</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Slic3r Configuration assistant</title><link href="http://localhost:4000/blog/reprap-slic3r-config-assist/" rel="alternate" type="text/html" title="Slic3r Configuration assistant" /><published>2019-12-15T11:27:00+01:00</published><updated>2019-12-15T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-slic3r-config-assist</id><content type="html" xml:base="http://localhost:4000/blog/reprap-slic3r-config-assist/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
 &lt;p&gt;After &lt;a href=&quot;../reprap-repetier-host-setup/&quot;&gt;configuring &lt;span class=&quot;app&quot;&gt;Repetier-Host&lt;/span&gt;&lt;/a&gt;, you also have to configure &lt;span class=&quot;app&quot;&gt;Slic3r&lt;/span&gt;.&lt;/p&gt;
 
@@ -246,7 +233,63 @@
 &lt;figure&gt;
 &lt;img src=&quot;../../images/slic2r-config-08.png&quot; /&gt;
 &lt;figcaption&gt; Slic3r Configuration Assistant, bed temperature.&lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="reprap" /><category term="Slic3r" /><category term="configuration" /><category term="setup" /><summary type="html">Configuration assistant for initial setup of Slic3r</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Design a kayak rudder, part 1</title><link href="http://localhost:4000/blog/reprap-blender-rudder-part1/" rel="alternate" type="text/html" title="Design a kayak rudder, part 1" /><published>2019-12-12T11:27:00+01:00</published><updated>2019-12-12T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-blender-rudder-part1</id><content type="html" xml:base="http://localhost:4000/blog/reprap-blender-rudder-part1/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="reprap" /><category term="Slic3r" /><category term="configuration" /><category term="setup" /><summary type="html">Configuration assistant for initial setup of Slic3r</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Configure Repetier-Host</title><link href="http://localhost:4000/blog/reprap-repetier-host-setup/" rel="alternate" type="text/html" title="Configure Repetier-Host" /><published>2019-12-15T11:27:00+01:00</published><updated>2019-12-15T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-repetier-host-setup</id><content type="html" xml:base="http://localhost:4000/blog/reprap-repetier-host-setup/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;This post goes through the configurations required for connecting the &lt;a href=&quot;https://www.3ders.org/articles/20130722-german-reprap-launches-protos-v2-3d-printer.html&quot;&gt;German RepRap PRotos V2&lt;/a&gt; to the software &lt;a href=&quot;https://www.repetier.com&quot;&gt;Repetier&lt;/a&gt; on Mac OSX. The instructions follows the &lt;a href=&quot;https://www.repetier.com/documentation/repetier-host-mac/installation-and-connection/&quot;&gt;Repetier-Host Mac Documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;repetier-host&quot;&gt;Repetier-Host&lt;/h2&gt;
+
+&lt;p&gt;Download and install &lt;a href=&quot;https://www.repetier.com/download-software/&quot;&gt;&lt;span class=&quot;app&quot;&gt;Repetier-Host&lt;/span&gt;&lt;/a&gt; as described in the &lt;a href=&quot;../reprap-software/&quot;&gt;previous post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Start &lt;span class=&quot;app&quot;&gt;Repetier-Host&lt;/span&gt;. Get to &lt;em&gt;Printer Settings&lt;/em&gt; via the menu:&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;menu&quot;&gt;Printer -&amp;gt; Printer Settings&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;or hit the [cmp]+[p] keys at the same time.&lt;/p&gt;
+
+&lt;h3 id=&quot;printer-settings&quot;&gt;Printer Settings&lt;/h3&gt;
+
+&lt;p&gt;In the Printer settings window, add a name of the configuration you want to create. You will need one configuration per printer per printing material. Thus, if you want to use different materials, you should set the name to reflect the material. In the example below I have called my configuration “PROTOS-V2-PLA”.&lt;/p&gt;
+
+&lt;h4 id=&quot;connection&quot;&gt;Connection&lt;/h4&gt;
+
+&lt;p&gt;if the &lt;em&gt;Connection&lt;/em&gt; is not correctly set, you will not be able to communicate with your printer. You have to give the &lt;em&gt;Port&lt;/em&gt;, and probably the &lt;em&gt;Baud Rate&lt;/em&gt; will differ comapred to the default. You need to check the documentation of your 3D-printer to get the correct &lt;em&gt;Baud Rate&lt;/em&gt;. The other parameters will most likely work by leaving the defaults.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/repetier-printer-config-connection.png&quot; /&gt;
+&lt;figcaption&gt; Repetier-Host connection configuration for German RepRap PRotos V2.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h4 id=&quot;behaviour&quot;&gt;Behaviour&lt;/h4&gt;
+
+&lt;p&gt;Under the &lt;span class=&quot;tab&quot;&gt;Behaviour&lt;/span&gt; tab, you need to change the &lt;em&gt;Default Extruder Temperature&lt;/em&gt; and the &lt;em&gt;Default heated bed temperature&lt;/em&gt;  to fit your printer, its heated bed and the material. The &lt;em&gt;Travel Feedrate&lt;/em&gt; depends on the extruder opening. The German RepRap PRotos V2 can travel at higher speed then the default. The smaller extruder (1.75 mm) can travel as fast as 10800 mm/min and the larger (3 mm) at 6000 mm/min.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/repetier-printer-config-behaviour.png&quot; /&gt;
+&lt;figcaption&gt; Repetier-Host behaviour configuration for German RepRap PRotos V2, PLA material.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h4 id=&quot;dimension&quot;&gt;Dimension&lt;/h4&gt;
+
+&lt;p&gt;The German RepRap PRotos V2 is a bit larger (210-230 mm) compared to the default (200 mm) settings of &lt;span class=&quot;app&quot;&gt;Repetier-Host&lt;/span&gt;.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/repetier-printer-config-dimension.png&quot; /&gt;
+&lt;figcaption&gt; Repetier-Host behaviour configuration for German RepRap PRotos V2, PLA material.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h4 id=&quot;advanced&quot;&gt;Advanced&lt;/h4&gt;
+
+&lt;p&gt;The advances settings can safely be left blanc.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;../../images/repetier-printer-config-advanced.png&quot; /&gt;
+&lt;figcaption&gt; Repetier-Host behaviour configuration for German RepRap PRotos V2, PLA material.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h4 id=&quot;done&quot;&gt;Done&lt;/h4&gt;
+
+&lt;p&gt;You should now be able to connect to your 3D-printer using &lt;span class=&quot;app&quot;&gt;Repetier-Host&lt;/span&gt;.&lt;/p&gt;</content><author><name></name></author><category term="reprap" /><category term="software" /><category term="Repetier" /><category term="repetier-host" /><category term="German RepRap Protos V2" /><category term="configuration" /><summary type="html">Configure Repetier-Host Mac for printing with the German RepRap PRotos V2</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Design a kayak rudder, part 1</title><link href="http://localhost:4000/blog/reprap-blender-rudder-part1/" rel="alternate" type="text/html" title="Design a kayak rudder, part 1" /><published>2019-12-12T11:27:00+01:00</published><updated>2019-12-12T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-blender-rudder-part1</id><content type="html" xml:base="http://localhost:4000/blog/reprap-blender-rudder-part1/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
 &lt;p&gt;Creating complex forms in &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt; that involves twisting, dragging or otherwise distorting a basic shape is tricky to do using scripting. Instead you attach a lattice over your original form and then interactively massage individual, or grouped, nodes from the lattice and the original form will follow. In this tutorial I show how to create a rudder for a kayak starting from a cylinder.&lt;/p&gt;
 
@@ -544,4 +587,24 @@ outcyl_ob = bpy.context.object
 &lt;figure&gt;
 &lt;img src=&quot;../../images/blender-python03.png&quot; /&gt;
 &lt;figcaption&gt; Blender GUI, run python script.&lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="reprap" /><category term="software" /><category term="Blender" /><category term="Meshmixer" /><category term="repetier-host" /><summary type="html">How to control Blender through Python scripting</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;/figure&gt;</content><author><name></name></author><category term="reprap" /><category term="software" /><category term="Blender" /><category term="Meshmixer" /><category term="repetier-host" /><summary type="html">How to control Blender through Python scripting</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reprap software</title><link href="http://localhost:4000/blog/reprap-software/" rel="alternate" type="text/html" title="Reprap software" /><published>2019-12-10T11:27:00+01:00</published><updated>2019-12-10T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-software</id><content type="html" xml:base="http://localhost:4000/blog/reprap-software/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;I use &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt; for designing and drawing 3D models. To transfer the models from &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt; to the printing app (&lt;span class=&quot;app&quot;&gt;Repetier-host&lt;/span&gt;) I have to go via &lt;span class=&quot;app&quot;&gt;Meshmixer&lt;/span&gt;. My processing chain for designing and printing 3D objects thus includes three apps.&lt;/p&gt;
+
+&lt;h2 id=&quot;blender&quot;&gt;Blender&lt;/h2&gt;
+
+&lt;p&gt;Different versions of &lt;a href=&quot;https://www.blender.org&quot;&gt;&lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt;&lt;/a&gt; have different bugs. To design and draw 3D objects I use &lt;a href=&quot;https://download.blender.org/release/Blender2.76/&quot;&gt;version 2.76 (05-Nov-2015)&lt;/a&gt;. The download for Mac OSX is a disk image (&lt;span class=&quot;file&quot;&gt;dmg&lt;/span&gt;). The &lt;span class=&quot;file&quot;&gt;dmg&lt;/span&gt; file only contains the app, just drag it to the &lt;span class=&quot;file&quot;&gt;Applications&lt;/span&gt; folder. As there is no other installation required, once you have copied the app you can simply rename it (to Blender276.app in my example).&lt;/p&gt;
+
+&lt;h2 id=&quot;meshmixer&quot;&gt;Meshmixer&lt;/h2&gt;
+
+&lt;p&gt;I use &lt;a href=&quot;https://www.meshmixer.org&quot;&gt;&lt;span class=&quot;app&quot;&gt;Meshmixer&lt;/span&gt;&lt;/a&gt; for converting my 3D models between different formats. But it can also be used for more advances processing.&lt;/p&gt;
+
+&lt;h2 id=&quot;repetier-host&quot;&gt;Repetier-Host&lt;/h2&gt;
+
+&lt;p&gt;My &lt;a href=&quot;https://3dprintingindustry.com/news/german-repraps-upgraded-protos-v2-bigger-easier-build-19846/&quot;&gt;German RepRap PRotos V2&lt;/a&gt; uses &lt;a href=&quot;https://www.repetier.com&quot;&gt;&lt;span class=&quot;app&quot;&gt;Repetier&lt;/span&gt;&lt;/a&gt; and &lt;a href=&quot;https://slic3r.org&quot;&gt;&lt;span class=&quot;app&quot;&gt;slic3r&lt;/span&gt;&lt;/a&gt; for printing. It is enough to download and install &lt;span class=&quot;app&quot;&gt;Repetier&lt;/span&gt; as it includes &lt;span class=&quot;app&quot;&gt;slic3r&lt;/span&gt;.&lt;/p&gt;</content><author><name></name></author><category term="reprap" /><category term="software" /><category term="Blender" /><category term="Meshmixer" /><category term="repetier-host" /><category term="German reprap PRotos V2" /><summary type="html">Software for designing and printing 3D objects</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Karttur GitHub repository overview</title><link href="http://localhost:4000/kayak/kayak-material/" rel="alternate" type="text/html" title="Karttur GitHub repository overview" /><published>2019-10-20T11:27:00+02:00</published><updated>2019-10-20T11:27:00+02:00</updated><id>http://localhost:4000/kayak/kayak-material</id><content type="html" xml:base="http://localhost:4000/kayak/kayak-material/">&lt;h2 id=&quot;glasfiberväv&quot;&gt;Glasfiberväv&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.epotex.se&quot;&gt;epotex.se&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;En relativt ny glasfiberväv som endast väger 160 g och som, enligt Janne på båtklubben, är väldigt följbar. Borden kunna vara ett alternativ för kajakbygge.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.epotex.se/epotex-webbutik/glas-och-kolfibervav&quot;&gt;Glasfiberväv 160 g/kvm twill&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Blog setup" /><summary type="html">Overview of Karttur´s GitHub site for blogs, articles and manuals</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
