@@ -16,7 +16,7 @@ share: true
 
 ## Introduction
 
-Creating complex forms in <span class='app'>Blender</span> that involves twisting, dragging or otherwise distorting a basic shape is tricky to do using scripting. Instead you attach a lattice over your original form and then interactively massage individual, or grouped, nodes from the lattice and the original form will follow. In this tutorial I show how to create a rudder for a kayak starting from a cylinder.
+Creating complex forms in <span class='app'>Blender</span> that involves twisting, dragging or otherwise distorting a basic shape is tricky to do using scripting. Instead you can attach a lattice over your original shape and then interactively massage individual, or grouped, nodes from the lattice and the original form will follow. In this tutorial I show how to create a rudder for a kayak starting from a cylinder.
 
 ## Start Blender with clean view
 
@@ -27,7 +27,7 @@ Start <span class='app'>Blender</span> (in my case Blender276.app - see [previou
 <figcaption> Initial GUI of Blender, object(s) in orange are active. </figcaption>
 </figure>
 
-For the first part of this manual the 3D viewer mode must be set to _Object mode_. Just below the 3D viewing area you should see the text _Object mode_ (illustrated in figure 2).
+For the first part of this manual the 3D viewer mode must be set to _Object mode_. Just below the 3D viewing area you should see the text _Object mode_.
 
 Sequentially remove the objects in the 3D view. Click on the object to remove (either in the 3D view or in the object frame at the top of the column to the right of the 3D view). The selected object turns orange. If you do not manage to select an object, you can use the _Select_ menu and its options towards the GUI bottom left (see figure 2).
 
@@ -52,7 +52,7 @@ With a clean 3d view, change the left column to _Create_ from the vertical tabs 
 <figcaption> Click _shift_+_S_ keys to position the cursor. </figcaption>
 </figure>
 
-Add the basic form you want to use to start with. In the example below I have added a cylinder. In the left column, below the list of basic shapes, the default parameters set for the shape you select appear: _Vertices_, _Radius_, _Depth_, _Cap Fill Type_, _Align to View_, _Location_ and _Rotation_. You can alter these parameters directly, or us the short keys and enter codes/numbers as described in the the next session.
+Add the basic form you want to use to start with. In the example below I have added a cylinder. In the left column, below the list of basic shapes, the default parameters set for the shape you select appear: _Vertices_, _Radius_, _Depth_, _Cap Fill Type_, _Align to View_, _Location_ and _Rotation_. You can alter these parameters directly, or use the short keys and enter codes/numbers as described in the the next session.
 
 <figure>
 <img src="../../images/blender-rudder05.png">
@@ -68,7 +68,7 @@ This step is not strictly necessary, you can always do it as a post-processing s
 <figcaption> Rotate the object by pressing the R key, followed by the axis around which you want to rotate and the degrees of the rotation movement. Or enter the rotation in the left column and the object will rotate interactively.</figcaption>
 </figure>
 
-Similarily, if you want to change the size, just press the _S_ key, and enter a size factor. This affects all axis equally. To set different size factors on different axis hit the corresponding axis key (X,Y,Z) before entering the scale factor. You can only change one axis at a time. As the rudder form will be elliptic, you can create a more elliptic shape by increasing _Y_ and _X_ and leave _Z_. In the example below I have set both _X_ and _Y_ to a factor of 3.
+Similarily, if you want to change the size, just press the _S_ key, and enter a size factor. This affects all axis equally. To set different size factors on different axis hit the corresponding axis key (_X_, _Y_, _Z_) before entering the scale factor. You can only change one axis at a time. As the rudder form will be elliptic, you can create a more elliptic shape by increasing _Y_ and _X_ and leave _Z_. In the example below I have set both _X_ and _Y_ to a factor of 3.
 
 <figure>
 <img src="../../images/blender-rudder07.png">
@@ -77,14 +77,14 @@ Similarily, if you want to change the size, just press the _S_ key, and enter a 
 
 ## Add and setup lattice
 
-To add a new form, simultaneously press the _Shift_+_A_ keys, and then select the basic shape you desire (_lattice_ in this tutorial). With the lattice selected, change its size (press the _S_ key followed by the axis a factor and then return) to fit the original object. if you changed the size of the original object you have to make similar changes to the lattice size.
+To add a new form, simultaneously press the _Shift_+_A_ keys, and then select the basic shape you desire (_lattice_ in this tutorial). With the lattice selected, change its size (press the _S_ key followed by the axis a factor and then return) to fit the original object. if you changed the size of the original object you have to make similar changes to the lattice size. The lattice should fit the object to modify snuggly.
 
 <figure>
 <img src="../../images/blender-rudder08.png">
 <figcaption> Add lattice through pressing the Shift+A keys and then resize by pressing the S key. The lattice should fit the oblect you want to transform. </figcaption>
 </figure>
 
-With the lattice still selected, click the _Object Data_ button (looks like a small window frame - the blue button in the figure below) in the object menu (in the right column). In the menu that then appears you can set the node density in X(U), Y(V) and Z(W). In the example below I have added 2 nodes to U (total = 4) and 1 node to V (total = 3) for illustration purposes. I suggest that you add so that you get 4 or 5 nodes per axis.
+With the lattice still selected, click the _Object Data_ button (looks like a small window frame - the blue button in the right column in the figure below) in the object menu (in the right column). In the menu that then appears you can set the node density in X(U), Y(V) and Z(W). In the example below I have added 2 nodes to U (total = 4) and 1 node to V (total = 3) for illustration purposes. I suggest that you add so that you get 4 or 5 nodes per axis.
 
 <figure>
 <img src="../../images/blender-rudder09.png">
@@ -108,7 +108,7 @@ The right column will change appearance and only contain a drop down menu for se
 ![blender-rudder12](../../images/blender-rudder12.png)
 {: .pull-right}
 
-The chosen modifier _type_ shows up as a window with options below the drop down menu. In that small window there is one item for _Object_ (showing a small orange cube and an eye-dropper). Click on the cube, and a drop down list appears showing your alternatives. It should only contain one item, namely your _Lattice_ as shown to the right. Select it.
+The chosen modifier _type_ shows up as a window with options below the drop down menu. In that small window there is one item for _Object_ (showing a small orange cube and an eye-dropper). Click on the cube, and a drop down list appears (the eye-dropper disappears) showing your alternatives. It should only contain one item, namely your _Lattice_ as shown to the right. Select it.
 
 ## Lattice object modifier
 
@@ -119,16 +119,13 @@ To "activate" the attached lattice for transforming the underlying object (cylin
 <figcaption> Activate the lattice transformation mode by selecting the lattice as the active object and change the 3D-view mode to Edit mode. </figcaption>
 </figure>
 
-![blender-rudder13](../../images/blender-rudder13.png)
-{: .pull-right}
-
 To actually use the lattice for transforming your object, you have to select one or more of the nodes, and then whatever you choose to do, will affect the selected nodes. Use the _Select_ menu to define how to select nodes, I prefer using the _Border Select_ option (also reached by just pressing the _B_ key). When selecting a new set of nodes, you first have to _(De)Select All_ (or press the _A_ key).
 
 Selected nodes turn orange, and at the same time the transformation tool will show up. The default setting of the transformation tool is _Translate_, indicated by arrowheads (illustrated in the image in the next section). Other alternatives are _Rotate_ and _Scale_ (explained further down).
 
 ## Transform along axis
 
-The form I want to create is a typical rodder shape - a bit thicker towards the bow (where it is attached to the hull) and getting thinner towards the stern. As I have placed my cylinder that means I need to drag my object to become thinner along the x-axis. I thus select all nodes on either side of the y-axis and then _Translate_ the lattice by pulling the selected nodes with the xaxis arrow. The underlying form follows along.
+The form I want to create is a typical rodder shape - a bit thicker towards the bow (where it is attached to the hull) and getting thinner towards the stern. As I have placed my cylinder that means I need to drag my object to become thinner along the x-axis. I thus select all nodes on either side of the y-axis and then _Translate_ the lattice by pulling the selected nodes with the x-axis arrow. The underlying form follows along.
 
 <figure>
 <img src="../../images/blender-rudder14.png">
@@ -143,7 +140,7 @@ When pulling out (_Translate_) the rudder towards the stern, the proportions bet
 {: .pull-left}
 To increase the height select all the nodes in the lattice. Change from the _Translate_ tool (with arrowheads) to the _Scale tool_ (with cube heads) as illustrated to the left.
 
-As I have placed my rudder (for 3D printing reasons), the height is along the x-axis. The figure below illustrates the _Scale_ function applied along the x-axis.
+As I have placed my rudder (for 3D printing reasons), the height is along the y-axis. The figure below illustrates the _Scale_ function applied along the y-axis.
 
 <figure>
 <img src="../../images/blender-rudder16.png">

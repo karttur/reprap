@@ -5,10 +5,9 @@ categories: blog
 excerpt: "How to control Blender through Python scripting"
 tags:
   - reprap
-  - software
   - Blender
-  - Meshmixer
-  - repetier-host
+  - Scripting
+  - Python
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 date: '2019-12-11 11:27'
 modified: '2019-12-11 11:27'
@@ -18,7 +17,7 @@ share: true
 
 ## Introduction
 
-I use <span class='app'>Blender</span> for creating 3D models that can later be printed as objects. The 3D models can be created interactively using the <span class='app'>Blender</span> GUI, but I create most of my objects using Python scripting for controlling <span class='app'>Blender</span>.
+I use <span class='app'>Blender</span> for creating 3D models that can later be printed as objects. The 3D models can be created interactively using the <span class='app'>Blender</span> GUI, but I create most of my objects using Python scripting for controlling <span class='app'>Blender</span>. The two next posts introduces [interactive modeling](../reprap-blender-rudder-part1) and [modeling using python scripting](../reprap-blender-rudder-part2). This post covers the setup of <span class='app'>Blender</span> for python scripting.
 
 ## Prerequisites
 
@@ -75,7 +74,7 @@ outcyl_ob = bpy.context.object
 
 Then run the script from the menu below the text editor window, illustrated in the figure below.
 
-<span class='menu'>Text -> Run Script</span>
+<span class='menu'>text -> Run Script</span>
 
 You should then get the cylinder as shown in the canvas area on the figure.
 
@@ -86,11 +85,7 @@ You should then get the cylinder as shown in the canvas area on the figure.
 
 ## Default Python code
 
-When I design and create my own 3D objects using Python and <span class='app'>Blender</span>I start with importing the required packages (_bpy_ and _sys_) and some _math_ routines. I then define the scene clean all default items in the scene and set the units.
-
-When designing using Python I primarily use basic shapes (e.g. mesh, cube, circle, cylinder, cone, torus etc) and then reshape these using scripting. The moulding of the basic shapes into the shapes I want is cone individually. But then I often use the moulded objects for either cutting out pieces from or adding to, existing objects. To facilitate that I have defined three functions: _CleanOb_, _UnionObs_ and _DiffObs_.
-
-Starting any design project, I thus use the following code:
+When I design and create my own 3D objects, I primarily use basic shapes (mesh, cube, circle, cylinder, cone, torus etc) and then reshape these using scripting. The moulding of the basic shapes into the shapes I want is done individually. But then I often use the moulded objects for either cutting out pieces from or adding to, existing objects. To facilitate that I have defined four functions: _CleanOb_, _UnionObs_, _DiffObs_ and _IntersectObs_. I thus tend to start every design with the same basic script:
 
 ```
 import bpy

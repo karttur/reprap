@@ -27,7 +27,7 @@ Different versions of [<span class='app'>Blender</span>](https://www.blender.org
 
 ## Meshmixer
 
-I use [<span class='app'>Meshmixer</span>](https://www.meshmixer.org) for converting my 3D models between different formats. But it can also be used for more advances processing.
+I use [<span class='app'>Meshmixer</span>](http://www.meshmixer.com) for converting my 3D models between different formats. But it can also be used for more advances processing.
 
 ## Repetier-Host
 

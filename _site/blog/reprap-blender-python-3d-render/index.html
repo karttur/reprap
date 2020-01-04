@@ -7,7 +7,7 @@
 <meta charset="utf-8">
 <title>Python scripting in Blender &#8211; Geo Imagine Developer</title>
 <meta name="description" content="How to control Blender through Python scripting">
-<meta name="keywords" content="reprap, software, Blender, Meshmixer, repetier-host">
+<meta name="keywords" content="reprap, Blender, Scripting, Python">
 
 
 <!-- Twitter Cards -->
@@ -125,7 +125,7 @@
         <div class="entry-wrapper">
       <header class="entry-header">
         <ul class="entry-tags">
-          <li><a href="http://localhost:4000/tags/#reprap" title="Pages tagged reprap">reprap</a></li><li><a href="http://localhost:4000/tags/#software" title="Pages tagged software">software</a></li><li><a href="http://localhost:4000/tags/#Blender" title="Pages tagged Blender">Blender</a></li><li><a href="http://localhost:4000/tags/#Meshmixer" title="Pages tagged Meshmixer">Meshmixer</a></li><li><a href="http://localhost:4000/tags/#repetier-host" title="Pages tagged repetier-host">repetier-host</a></li>
+          <li><a href="http://localhost:4000/tags/#reprap" title="Pages tagged reprap">reprap</a></li><li><a href="http://localhost:4000/tags/#Blender" title="Pages tagged Blender">Blender</a></li><li><a href="http://localhost:4000/tags/#Scripting" title="Pages tagged Scripting">Scripting</a></li><li><a href="http://localhost:4000/tags/#Python" title="Pages tagged Python">Python</a></li>
         </ul>
         
           <h1 class="entry-title">Python scripting in Blender</h1>
@@ -141,7 +141,7 @@
         <span class="entry-date date modified"><time datetime="2019-12-11 11:27"><i class="fa fa-pencil"></i> December 11, 2019</time></span>
         
         <span class="social-share-twitter">
-  <a href="https://twitter.com/intent/tweet?hashtags=reprap,software,Blender,Meshmixer,repetier-host&amp;text=Python%20scripting%20in%20Blender&amp;url=http://localhost:4000/blog/reprap-blender-python-3d-render/" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+  <a href="https://twitter.com/intent/tweet?hashtags=reprap,Blender,Scripting,Python&amp;text=Python%20scripting%20in%20Blender&amp;url=http://localhost:4000/blog/reprap-blender-python-3d-render/" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
 </span>
 <span class="social-share-facebook">
   <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/blog/reprap-blender-python-3d-render/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
@@ -155,7 +155,7 @@
       <div class="entry-content">
         <h2 id="introduction">Introduction</h2>
 
-<p>I use <span class="app">Blender</span> for creating 3D models that can later be printed as objects. The 3D models can be created interactively using the <span class="app">Blender</span> GUI, but I create most of my objects using Python scripting for controlling <span class="app">Blender</span>.</p>
+<p>I use <span class="app">Blender</span> for creating 3D models that can later be printed as objects. The 3D models can be created interactively using the <span class="app">Blender</span> GUI, but I create most of my objects using Python scripting for controlling <span class="app">Blender</span>. The two next posts introduces <a href="../reprap-blender-rudder-part1">interactive modeling</a> and <a href="../reprap-blender-rudder-part2">modeling using python scripting</a>. This post covers the setup of <span class="app">Blender</span> for python scripting.</p>
 
 <h2 id="prerequisites">Prerequisites</h2>
 
@@ -211,7 +211,7 @@ outcyl_ob = bpy.context.object
 
 <p>Then run the script from the menu below the text editor window, illustrated in the figure below.</p>
 
-<p><span class="menu">Text -&gt; Run Script</span></p>
+<p><span class="menu">text -&gt; Run Script</span></p>
 
 <p>You should then get the cylinder as shown in the canvas area on the figure.</p>
 
@@ -222,11 +222,7 @@ outcyl_ob = bpy.context.object
 
 <h2 id="default-python-code">Default Python code</h2>
 
-<p>When I design and create my own 3D objects using Python and <span class="app">Blender</span>I start with importing the required packages (<em>bpy</em> and <em>sys</em>) and some <em>math</em> routines. I then define the scene clean all default items in the scene and set the units.</p>
-
-<p>When designing using Python I primarily use basic shapes (e.g. mesh, cube, circle, cylinder, cone, torus etc) and then reshape these using scripting. The moulding of the basic shapes into the shapes I want is cone individually. But then I often use the moulded objects for either cutting out pieces from or adding to, existing objects. To facilitate that I have defined three functions: <em>CleanOb</em>, <em>UnionObs</em> and <em>DiffObs</em>.</p>
-
-<p>Starting any design project, I thus use the following code:</p>
+<p>When I design and create my own 3D objects, I primarily use basic shapes (mesh, cube, circle, cylinder, cone, torus etc) and then reshape these using scripting. The moulding of the basic shapes into the shapes I want is done individually. But then I often use the moulded objects for either cutting out pieces from or adding to, existing objects. To facilitate that I have defined four functions: <em>CleanOb</em>, <em>UnionObs</em>, <em>DiffObs</em> and <em>IntersectObs</em>. I thus tend to start every design with the same basic script:</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import bpy
 import sys

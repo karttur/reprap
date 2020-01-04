@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-02T18:49:21+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Geo Imagine Developer</title><subtitle>script your own Earth</subtitle><entry><title type="html">Slic3r Filament settings</title><link href="http://localhost:4000/blog/reprap-slic3r-config-filament/" rel="alternate" type="text/html" title="Slic3r Filament settings" /><published>2019-12-17T11:27:00+01:00</published><updated>2019-12-17T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-slic3r-config-filament</id><content type="html" xml:base="http://localhost:4000/blog/reprap-slic3r-config-filament/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-02T20:01:49+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Geo Imagine Developer</title><subtitle>script your own Earth</subtitle><entry><title type="html">Slic3r Filament settings</title><link href="http://localhost:4000/blog/reprap-slic3r-config-filament/" rel="alternate" type="text/html" title="Slic3r Filament settings" /><published>2019-12-17T11:27:00+01:00</published><updated>2019-12-17T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-slic3r-config-filament</id><content type="html" xml:base="http://localhost:4000/blog/reprap-slic3r-config-filament/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
 &lt;p&gt;For each filament material and diameter, as well as nozzle diameter, you have to define different parameter for &lt;strong&gt;print settings&lt;/strong&gt; (&lt;a href=&quot;../reprap-slic3r-config-print&quot;&gt;previous post&lt;/a&gt;), &lt;strong&gt;filament settings&lt;/strong&gt; (this post) and/or &lt;strong&gt;printing settings&lt;/strong&gt; ([next page(../reprap-slic3r-config-printing)]).&lt;/p&gt;
 
@@ -291,7 +291,7 @@
 &lt;figcaption&gt; Slic3r Configuration Assistant, bed temperature.&lt;/figcaption&gt;
 &lt;/figure&gt;</content><author><name></name></author><category term="reprap" /><category term="Slic3r" /><category term="configuration" /><category term="setup" /><summary type="html">Configuration assistant for initial setup of Slic3r</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Design a kayak rudder, part 1</title><link href="http://localhost:4000/blog/reprap-blender-rudder-part1/" rel="alternate" type="text/html" title="Design a kayak rudder, part 1" /><published>2019-12-12T11:27:00+01:00</published><updated>2019-12-12T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-blender-rudder-part1</id><content type="html" xml:base="http://localhost:4000/blog/reprap-blender-rudder-part1/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
-&lt;p&gt;Creating complex forms in &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt; that involves twisting, dragging or otherwise distorting a basic shape is tricky to do using scripting. Instead you attach a lattice over your original form and then interactively massage individual, or grouped, nodes from the lattice and the original form will follow. In this tutorial I show how to create a rudder for a kayak starting from a cylinder.&lt;/p&gt;
+&lt;p&gt;Creating complex forms in &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt; that involves twisting, dragging or otherwise distorting a basic shape is tricky to do using scripting. Instead you can attach a lattice over your original shape and then interactively massage individual, or grouped, nodes from the lattice and the original form will follow. In this tutorial I show how to create a rudder for a kayak starting from a cylinder.&lt;/p&gt;
 
 &lt;h2 id=&quot;start-blender-with-clean-view&quot;&gt;Start Blender with clean view&lt;/h2&gt;
 
@@ -302,7 +302,7 @@
 &lt;figcaption&gt; Initial GUI of Blender, object(s) in orange are active. &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;For the first part of this manual the 3D viewer mode must be set to &lt;em&gt;Object mode&lt;/em&gt;. Just below the 3D viewing area you should see the text &lt;em&gt;Object mode&lt;/em&gt; (illustrated in figure 2).&lt;/p&gt;
+&lt;p&gt;For the first part of this manual the 3D viewer mode must be set to &lt;em&gt;Object mode&lt;/em&gt;. Just below the 3D viewing area you should see the text &lt;em&gt;Object mode&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;Sequentially remove the objects in the 3D view. Click on the object to remove (either in the 3D view or in the object frame at the top of the column to the right of the 3D view). The selected object turns orange. If you do not manage to select an object, you can use the &lt;em&gt;Select&lt;/em&gt; menu and its options towards the GUI bottom left (see figure 2).&lt;/p&gt;
 
@@ -327,7 +327,7 @@
 &lt;figcaption&gt; Click _shift_+_S_ keys to position the cursor. &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Add the basic form you want to use to start with. In the example below I have added a cylinder. In the left column, below the list of basic shapes, the default parameters set for the shape you select appear: &lt;em&gt;Vertices&lt;/em&gt;, &lt;em&gt;Radius&lt;/em&gt;, &lt;em&gt;Depth&lt;/em&gt;, &lt;em&gt;Cap Fill Type&lt;/em&gt;, &lt;em&gt;Align to View&lt;/em&gt;, &lt;em&gt;Location&lt;/em&gt; and &lt;em&gt;Rotation&lt;/em&gt;. You can alter these parameters directly, or us the short keys and enter codes/numbers as described in the the next session.&lt;/p&gt;
+&lt;p&gt;Add the basic form you want to use to start with. In the example below I have added a cylinder. In the left column, below the list of basic shapes, the default parameters set for the shape you select appear: &lt;em&gt;Vertices&lt;/em&gt;, &lt;em&gt;Radius&lt;/em&gt;, &lt;em&gt;Depth&lt;/em&gt;, &lt;em&gt;Cap Fill Type&lt;/em&gt;, &lt;em&gt;Align to View&lt;/em&gt;, &lt;em&gt;Location&lt;/em&gt; and &lt;em&gt;Rotation&lt;/em&gt;. You can alter these parameters directly, or use the short keys and enter codes/numbers as described in the the next session.&lt;/p&gt;
 
 &lt;figure&gt;
 &lt;img src=&quot;../../images/blender-rudder05.png&quot; /&gt;
@@ -343,7 +343,7 @@
 &lt;figcaption&gt; Rotate the object by pressing the R key, followed by the axis around which you want to rotate and the degrees of the rotation movement. Or enter the rotation in the left column and the object will rotate interactively.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Similarily, if you want to change the size, just press the &lt;em&gt;S&lt;/em&gt; key, and enter a size factor. This affects all axis equally. To set different size factors on different axis hit the corresponding axis key (X,Y,Z) before entering the scale factor. You can only change one axis at a time. As the rudder form will be elliptic, you can create a more elliptic shape by increasing &lt;em&gt;Y&lt;/em&gt; and &lt;em&gt;X&lt;/em&gt; and leave &lt;em&gt;Z&lt;/em&gt;. In the example below I have set both &lt;em&gt;X&lt;/em&gt; and &lt;em&gt;Y&lt;/em&gt; to a factor of 3.&lt;/p&gt;
+&lt;p&gt;Similarily, if you want to change the size, just press the &lt;em&gt;S&lt;/em&gt; key, and enter a size factor. This affects all axis equally. To set different size factors on different axis hit the corresponding axis key (&lt;em&gt;X&lt;/em&gt;, &lt;em&gt;Y&lt;/em&gt;, &lt;em&gt;Z&lt;/em&gt;) before entering the scale factor. You can only change one axis at a time. As the rudder form will be elliptic, you can create a more elliptic shape by increasing &lt;em&gt;Y&lt;/em&gt; and &lt;em&gt;X&lt;/em&gt; and leave &lt;em&gt;Z&lt;/em&gt;. In the example below I have set both &lt;em&gt;X&lt;/em&gt; and &lt;em&gt;Y&lt;/em&gt; to a factor of 3.&lt;/p&gt;
 
 &lt;figure&gt;
 &lt;img src=&quot;../../images/blender-rudder07.png&quot; /&gt;
@@ -352,14 +352,14 @@
 
 &lt;h2 id=&quot;add-and-setup-lattice&quot;&gt;Add and setup lattice&lt;/h2&gt;
 
-&lt;p&gt;To add a new form, simultaneously press the &lt;em&gt;Shift&lt;/em&gt;+&lt;em&gt;A&lt;/em&gt; keys, and then select the basic shape you desire (&lt;em&gt;lattice&lt;/em&gt; in this tutorial). With the lattice selected, change its size (press the &lt;em&gt;S&lt;/em&gt; key followed by the axis a factor and then return) to fit the original object. if you changed the size of the original object you have to make similar changes to the lattice size.&lt;/p&gt;
+&lt;p&gt;To add a new form, simultaneously press the &lt;em&gt;Shift&lt;/em&gt;+&lt;em&gt;A&lt;/em&gt; keys, and then select the basic shape you desire (&lt;em&gt;lattice&lt;/em&gt; in this tutorial). With the lattice selected, change its size (press the &lt;em&gt;S&lt;/em&gt; key followed by the axis a factor and then return) to fit the original object. if you changed the size of the original object you have to make similar changes to the lattice size. The lattice should fit the object to modify snuggly.&lt;/p&gt;
 
 &lt;figure&gt;
 &lt;img src=&quot;../../images/blender-rudder08.png&quot; /&gt;
 &lt;figcaption&gt; Add lattice through pressing the Shift+A keys and then resize by pressing the S key. The lattice should fit the oblect you want to transform. &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;With the lattice still selected, click the &lt;em&gt;Object Data&lt;/em&gt; button (looks like a small window frame - the blue button in the figure below) in the object menu (in the right column). In the menu that then appears you can set the node density in X(U), Y(V) and Z(W). In the example below I have added 2 nodes to U (total = 4) and 1 node to V (total = 3) for illustration purposes. I suggest that you add so that you get 4 or 5 nodes per axis.&lt;/p&gt;
+&lt;p&gt;With the lattice still selected, click the &lt;em&gt;Object Data&lt;/em&gt; button (looks like a small window frame - the blue button in the right column in the figure below) in the object menu (in the right column). In the menu that then appears you can set the node density in X(U), Y(V) and Z(W). In the example below I have added 2 nodes to U (total = 4) and 1 node to V (total = 3) for illustration purposes. I suggest that you add so that you get 4 or 5 nodes per axis.&lt;/p&gt;
 
 &lt;figure&gt;
 &lt;img src=&quot;../../images/blender-rudder09.png&quot; /&gt;
@@ -381,7 +381,7 @@
 
 &lt;p class=&quot;pull-right&quot;&gt;&lt;img src=&quot;../../images/blender-rudder12.png&quot; alt=&quot;blender-rudder12&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The chosen modifier &lt;em&gt;type&lt;/em&gt; shows up as a window with options below the drop down menu. In that small window there is one item for &lt;em&gt;Object&lt;/em&gt; (showing a small orange cube and an eye-dropper). Click on the cube, and a drop down list appears showing your alternatives. It should only contain one item, namely your &lt;em&gt;Lattice&lt;/em&gt; as shown to the right. Select it.&lt;/p&gt;
+&lt;p&gt;The chosen modifier &lt;em&gt;type&lt;/em&gt; shows up as a window with options below the drop down menu. In that small window there is one item for &lt;em&gt;Object&lt;/em&gt; (showing a small orange cube and an eye-dropper). Click on the cube, and a drop down list appears (the eye-dropper disappears) showing your alternatives. It should only contain one item, namely your &lt;em&gt;Lattice&lt;/em&gt; as shown to the right. Select it.&lt;/p&gt;
 
 &lt;h2 id=&quot;lattice-object-modifier&quot;&gt;Lattice object modifier&lt;/h2&gt;
 
@@ -392,15 +392,13 @@
 &lt;figcaption&gt; Activate the lattice transformation mode by selecting the lattice as the active object and change the 3D-view mode to Edit mode. &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p class=&quot;pull-right&quot;&gt;&lt;img src=&quot;../../images/blender-rudder13.png&quot; alt=&quot;blender-rudder13&quot; /&gt;&lt;/p&gt;
-
 &lt;p&gt;To actually use the lattice for transforming your object, you have to select one or more of the nodes, and then whatever you choose to do, will affect the selected nodes. Use the &lt;em&gt;Select&lt;/em&gt; menu to define how to select nodes, I prefer using the &lt;em&gt;Border Select&lt;/em&gt; option (also reached by just pressing the &lt;em&gt;B&lt;/em&gt; key). When selecting a new set of nodes, you first have to &lt;em&gt;(De)Select All&lt;/em&gt; (or press the &lt;em&gt;A&lt;/em&gt; key).&lt;/p&gt;
 
 &lt;p&gt;Selected nodes turn orange, and at the same time the transformation tool will show up. The default setting of the transformation tool is &lt;em&gt;Translate&lt;/em&gt;, indicated by arrowheads (illustrated in the image in the next section). Other alternatives are &lt;em&gt;Rotate&lt;/em&gt; and &lt;em&gt;Scale&lt;/em&gt; (explained further down).&lt;/p&gt;
 
 &lt;h2 id=&quot;transform-along-axis&quot;&gt;Transform along axis&lt;/h2&gt;
 
-&lt;p&gt;The form I want to create is a typical rodder shape - a bit thicker towards the bow (where it is attached to the hull) and getting thinner towards the stern. As I have placed my cylinder that means I need to drag my object to become thinner along the x-axis. I thus select all nodes on either side of the y-axis and then &lt;em&gt;Translate&lt;/em&gt; the lattice by pulling the selected nodes with the xaxis arrow. The underlying form follows along.&lt;/p&gt;
+&lt;p&gt;The form I want to create is a typical rodder shape - a bit thicker towards the bow (where it is attached to the hull) and getting thinner towards the stern. As I have placed my cylinder that means I need to drag my object to become thinner along the x-axis. I thus select all nodes on either side of the y-axis and then &lt;em&gt;Translate&lt;/em&gt; the lattice by pulling the selected nodes with the x-axis arrow. The underlying form follows along.&lt;/p&gt;
 
 &lt;figure&gt;
 &lt;img src=&quot;../../images/blender-rudder14.png&quot; /&gt;
@@ -414,7 +412,7 @@
 &lt;p class=&quot;pull-left&quot;&gt;&lt;img src=&quot;../../images/blender-rudder15.png&quot; alt=&quot;blender-rudder15&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;To increase the height select all the nodes in the lattice. Change from the &lt;em&gt;Translate&lt;/em&gt; tool (with arrowheads) to the &lt;em&gt;Scale tool&lt;/em&gt; (with cube heads) as illustrated to the left.&lt;/p&gt;
 
-&lt;p&gt;As I have placed my rudder (for 3D printing reasons), the height is along the x-axis. The figure below illustrates the &lt;em&gt;Scale&lt;/em&gt; function applied along the x-axis.&lt;/p&gt;
+&lt;p&gt;As I have placed my rudder (for 3D printing reasons), the height is along the y-axis. The figure below illustrates the &lt;em&gt;Scale&lt;/em&gt; function applied along the y-axis.&lt;/p&gt;
 
 &lt;figure&gt;
 &lt;img src=&quot;../../images/blender-rudder16.png&quot; /&gt;
@@ -533,7 +531,7 @@ bpy.ops.export_mesh.ply(filepath=FP)
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="reprap" /><category term="Blender" /><category term="lattice" /><summary type="html">Cut rudder and add hole for sterring axis in Blender using Python scripting.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Python scripting in Blender</title><link href="http://localhost:4000/blog/reprap-blender-python-3d-render/" rel="alternate" type="text/html" title="Python scripting in Blender" /><published>2019-12-11T11:27:00+01:00</published><updated>2019-12-11T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-blender-python-3d-render</id><content type="html" xml:base="http://localhost:4000/blog/reprap-blender-python-3d-render/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
-&lt;p&gt;I use &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt; for creating 3D models that can later be printed as objects. The 3D models can be created interactively using the &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt; GUI, but I create most of my objects using Python scripting for controlling &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;I use &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt; for creating 3D models that can later be printed as objects. The 3D models can be created interactively using the &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt; GUI, but I create most of my objects using Python scripting for controlling &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt;. The two next posts introduces &lt;a href=&quot;../reprap-blender-rudder-part1&quot;&gt;interactive modeling&lt;/a&gt; and &lt;a href=&quot;../reprap-blender-rudder-part2&quot;&gt;modeling using python scripting&lt;/a&gt;. This post covers the setup of &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt; for python scripting.&lt;/p&gt;
 
 &lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
 
@@ -589,7 +587,7 @@ outcyl_ob = bpy.context.object
 
 &lt;p&gt;Then run the script from the menu below the text editor window, illustrated in the figure below.&lt;/p&gt;
 
-&lt;p&gt;&lt;span class=&quot;menu&quot;&gt;Text -&amp;gt; Run Script&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;menu&quot;&gt;text -&amp;gt; Run Script&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;You should then get the cylinder as shown in the canvas area on the figure.&lt;/p&gt;
 
@@ -600,11 +598,7 @@ outcyl_ob = bpy.context.object
 
 &lt;h2 id=&quot;default-python-code&quot;&gt;Default Python code&lt;/h2&gt;
 
-&lt;p&gt;When I design and create my own 3D objects using Python and &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt;I start with importing the required packages (&lt;em&gt;bpy&lt;/em&gt; and &lt;em&gt;sys&lt;/em&gt;) and some &lt;em&gt;math&lt;/em&gt; routines. I then define the scene clean all default items in the scene and set the units.&lt;/p&gt;
-
-&lt;p&gt;When designing using Python I primarily use basic shapes (e.g. mesh, cube, circle, cylinder, cone, torus etc) and then reshape these using scripting. The moulding of the basic shapes into the shapes I want is cone individually. But then I often use the moulded objects for either cutting out pieces from or adding to, existing objects. To facilitate that I have defined three functions: &lt;em&gt;CleanOb&lt;/em&gt;, &lt;em&gt;UnionObs&lt;/em&gt; and &lt;em&gt;DiffObs&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Starting any design project, I thus use the following code:&lt;/p&gt;
+&lt;p&gt;When I design and create my own 3D objects, I primarily use basic shapes (mesh, cube, circle, cylinder, cone, torus etc) and then reshape these using scripting. The moulding of the basic shapes into the shapes I want is done individually. But then I often use the moulded objects for either cutting out pieces from or adding to, existing objects. To facilitate that I have defined four functions: &lt;em&gt;CleanOb&lt;/em&gt;, &lt;em&gt;UnionObs&lt;/em&gt;, &lt;em&gt;DiffObs&lt;/em&gt; and &lt;em&gt;IntersectObs&lt;/em&gt;. I thus tend to start every design with the same basic script:&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import bpy
 import sys
@@ -663,7 +657,7 @@ scn=bpy.context.scene
 
 #bpy.data.scenes[0].UnitSettings.system = 'METRIC'
 bpy.data.scenes[0].unit_settings.scale_length = 0.001
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="reprap" /><category term="software" /><category term="Blender" /><category term="Meshmixer" /><category term="repetier-host" /><summary type="html">How to control Blender through Python scripting</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reprap software</title><link href="http://localhost:4000/blog/reprap-software/" rel="alternate" type="text/html" title="Reprap software" /><published>2019-12-10T11:27:00+01:00</published><updated>2019-12-10T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-software</id><content type="html" xml:base="http://localhost:4000/blog/reprap-software/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="reprap" /><category term="Blender" /><category term="Scripting" /><category term="Python" /><summary type="html">How to control Blender through Python scripting</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" /><media:content medium="image" url="http://localhost:4000/avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reprap software</title><link href="http://localhost:4000/blog/reprap-software/" rel="alternate" type="text/html" title="Reprap software" /><published>2019-12-10T11:27:00+01:00</published><updated>2019-12-10T11:27:00+01:00</updated><id>http://localhost:4000/blog/reprap-software</id><content type="html" xml:base="http://localhost:4000/blog/reprap-software/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
 &lt;p&gt;I use &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt; for designing and drawing 3D models. To transfer the models from &lt;span class=&quot;app&quot;&gt;Blender&lt;/span&gt; to the printing app (&lt;span class=&quot;app&quot;&gt;Repetier-host&lt;/span&gt;) I have to go via &lt;span class=&quot;app&quot;&gt;Meshmixer&lt;/span&gt;. My processing chain for designing and printing 3D objects thus includes three apps.&lt;/p&gt;
 
@@ -673,7 +667,7 @@ bpy.data.scenes[0].unit_settings.scale_length = 0.001
 
 &lt;h2 id=&quot;meshmixer&quot;&gt;Meshmixer&lt;/h2&gt;
 
-&lt;p&gt;I use &lt;a href=&quot;https://www.meshmixer.org&quot;&gt;&lt;span class=&quot;app&quot;&gt;Meshmixer&lt;/span&gt;&lt;/a&gt; for converting my 3D models between different formats. But it can also be used for more advances processing.&lt;/p&gt;
+&lt;p&gt;I use &lt;a href=&quot;http://www.meshmixer.com&quot;&gt;&lt;span class=&quot;app&quot;&gt;Meshmixer&lt;/span&gt;&lt;/a&gt; for converting my 3D models between different formats. But it can also be used for more advances processing.&lt;/p&gt;
 
 &lt;h2 id=&quot;repetier-host&quot;&gt;Repetier-Host&lt;/h2&gt;
 
