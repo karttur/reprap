@@ -1,15 +1,18 @@
 ---
 layout: post
 title: Design a kayak rudder, part 2
-categories: blog
-excerpt: "Cut rudder and add hole for sterring axis in Blender using Python scripting."
+categories: blender-gui
+excerpt: "Cut rudder and add hole for steering axis in Blender using Python scripting."
 tags:
-  - reprap
-  - Blender
-  - lattice
+- reprap
+- Blender
+- lattice
+- kayak
+- rudder
+- 3D
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2019-12-12 11:27'
-modified: '2019-12-12 11:27'
+date: '2019-12-23 11:27'
+modified: '2019-12-23 11:27'
 comments: true
 share: true
 ---
@@ -20,7 +23,7 @@ In the [previous](../reprap-blender-rudder-part1/) post you created a kayak rudd
 
 ## Start Blender with clean view
 
-Start <span class='app'>Blender</span> and [open the scripting view as described in an earlier post](../reprap-blender-python-3d-render/). Copy the following script to the python text editor. Then just run the script as described in the [same post linked above](../reprap-blender-python-3d-render/). 
+Start <span class='app'>Blender</span> and [open the scripting view as described in an earlier post](../reprap-blender-python-3d-render/). Copy the following script to the python text editor. Then just run the script as described in the [same post linked above](../reprap-blender-python-3d-render/).
 
 ```
 import bpy

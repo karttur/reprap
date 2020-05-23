@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Design spare part for my adventsstjärna
-categories: blog
+title: Spare part for my adventsstjärna
+categories: blender-python
 excerpt: "Design spare part for my adventsstjärna."
 tags:
   - reprap
@@ -9,8 +9,8 @@ tags:
   - python
   - advent
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2019-12-12 11:27'
-modified: '2019-12-12 11:27'
+date: '2019-12-24 11:27'
+modified: '2019-12-24 11:27'
 comments: true
 share: true
 ---
@@ -21,7 +21,12 @@ This post just contains the code for creating a spare part from my "adventesstj�
 
 ## Start Blender with clean view
 
-Start <span class='app'>Blender</span> and [open the scripting view as described in an earlier post](../reprap-blender-python-3d-render/). Copy the following script to the python text editor. Then just run the script as described in the [same post linked above](../reprap-blender-python-3d-render/).
+Start <span class='app'>Blender</span> and [open the scripting view as described in an earlier post](../../setup/reprap-blender-python-3d-render/). Copy the script below the figure to the python text editor. Then just run the script as described in the [same post linked above](../../setup/reprap-blender-python-3d-render/).
+
+<figure>
+<img src="../../images/blender-3d-model-adventstar-holder.png">
+<figcaption> STL model generated in blender by the Python code below. </figcaption>
+</figure>
 
 ```
 import bpy

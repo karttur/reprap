@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Configure Repetier-Host
-categories: blog
+categories: setup
 excerpt: "Configure Repetier-Host Mac for printing with the German RepRap PRotos V2"
 tags:
   - reprap

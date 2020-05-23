@@ -1,15 +1,18 @@
 ---
 layout: post
 title: Design a kayak rudder, part 1
-categories: blog
+categories: blender-gui
 excerpt: "Design a kayak rudder in Blender using lattice modifier"
 tags:
   - reprap
   - Blender
   - lattice
+  - kayak
+  - rudder
+  - 3D
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2019-12-12 11:27'
-modified: '2019-12-12 11:27'
+date: '2019-12-22 11:27'
+modified: '2019-12-22 11:27'
 comments: true
 share: true
 ---

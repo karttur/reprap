@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Slic3r Filament settings
-categories: blog
+categories: setup
 excerpt: "Configure filament setting in Slic3r"
 tags:
   - reprap

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Slic3r Printer settings
-categories: blog
+categories: setup
 excerpt: "Configure printer setting in Slic3r"
 tags:
   - reprap

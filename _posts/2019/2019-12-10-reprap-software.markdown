@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Reprap software
-categories: blog
-excerpt: "Software for designing and printing 3D objects"
+title: Reprap software setup
+categories: setup
+excerpt: "Software setup for designing and printing 3D objects"
 tags:
   - reprap
   - software

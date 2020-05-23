@@ -7,8 +7,20 @@
   url: /
   include: 'N'
 
-- title: RepRap Blog
-  url: /blog/
+- title: Setup
+  url: /setup/
+  include: 'N'
+
+- title: Blender-GUI
+  url: /blender-gui/
+  include: 'N'
+
+- title: Blender-model
+  url: /blender-python/
+  include: 'N'
+
+- title: spectromodel
+  url: /spectromodel/
   include: 'N'
 
 - title: Search

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Slic3r Configuration assistant
-categories: blog
+categories: setup
 excerpt: "Configuration assistant for initial setup of Slic3r"
 tags:
   - reprap

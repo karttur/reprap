@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python scripting in Blender
-categories: blog
+categories: setup
 excerpt: "How to control Blender through Python scripting"
 tags:
   - reprap
