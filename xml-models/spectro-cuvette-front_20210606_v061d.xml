@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<dim>
+	<output ply='1' stl='0' obj='0'>
+			/Users/thomasgumbricht/docs-local/STL_models/2021/spectro-cuvette-front_20210606_v061d
+	</output>
+
+	<box baseshape = 'cube' W='21' L='37' wallT='3.5'  H='46.0' floorT='2.0'  cornerradius='0' innerrim='0' outerrim='1.75' rimheight='1.75'></box>
+
+	<structures>
+
+		<item id='thickerbase' baseshape = 'cube' inside='0'  W = '16' L = '15' H = '12' centerx='0' centery='9.0' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='2' rimheight='35' embed='0'>
+		</item>
+
+		<item id='stopper' baseshape = 'cube' inside='0'  W = '0' L = '8' H = '10' centerx='-10.5' centery='-8.0' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='2' rimheight='10' embed='0'>
+		</item>
+
+		<item id='rim' baseshape = 'cube' inside='0'  W = '0' L = '20' H = '10' centerx='10.5' centery='-7.0' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='3' rimheight='5' embed='0'>
+		</item>
+
+		<item id='inside' baseshape = 'cube' inside='0'  W = '14' L = '14' H = '12' centerx='0' centery='9.0' centerz='5' rotationx='0' rotationy='0' rotationz='0' rimwidth='2' rimheight='18' embed='0' removeonly='1'>
+		</item>
+
+		<item id='cuvettehandle1' baseshape = 'cylinder' inside='1'  W = '6.0' L = '4.0' H = '10' centerx='0' centery='15' centerz='46' rotationx='0' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='1.5'>
+		</item>
+
+		<item id='cuvettehandle2' baseshape = 'cylinder' inside='1'  W = '6.0' L = '4.0' H = '10' centerx='0' centery='2' centerz='46' rotationx='0' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='1.5'>
+		</item>
+
+		<item id='cuvettehandle3' baseshape = 'cylinder' inside='1'  W = '4.0' L = '6.0' H = '10' centerx='7' centery='8' centerz='46' rotationx='0' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='1.5'>
+		</item>
+
+		<item id='cuvettehandle4' baseshape = 'cylinder' inside='1'  W = '4.0' L = '6.0' H = '10' centerx='-7' centery='8' centerz='46' rotationx='0' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='1.5'>
+		</item>
+
+		<item id='spectro' baseshape = 'cylinder' inside='0'  W = '4.0' L = '4.0' H = '15' centerx='0' centery='-5' centerz='14' rotationx='90' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='0'>
+			<hole id = 'spectrohole' type = 'room' holeshape = 	'cylinder' W='10.0' L='16.2'  fromcenterx='0' fromcentery='0' rotationx='90' rotationy='0' rotationz='0'>
+			</hole>
+		</item>
+
+		<item id='frontligth' baseshape = 'cylinder' inside='0'  W = '4.0' L = '4.0' H = '10' centerx='0' centery='-20' centerz='14' rotationx='90' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='0'>
+			<hole id = 'spectrohole' type = 'room' holeshape = 	'cylinder' W='16.2' L='25.2'  fromcenterx='0' fromcentery='0' rotationx='90' rotationy='0' rotationz='0'>
+			</hole>
+		</item>
+
+		<item id='trxattach' baseshape = 'cube' inside='0'  W = '5' L = '18' H = '18.0' centerx='-13' centery='-16' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='0' rimheight='38' embed='0' removeonly='0'>
+		</item>
+
+		<item id='bottomrim' baseshape = 'cube' inside='0'  W = '20.0' L = '17' H = '12' centerx='1.25' centery='-7.0' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='3' rimheight='1.5' embed='0'>
+		</item>
+
+		<item id='textv' baseshape = 'text' text='xSpectre; v0.61d' inside='0' W = '6' L = '6' H = '3' centerx='12' centery='-8.5' centerz='25' rotationx='90' rotationy='0' rotationz='90' rimwidth='0' rimheight='0' embed='-1'>
+		</item>
+
+	</structures>
+
+</dim>

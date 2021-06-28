@@ -17,11 +17,11 @@ share: true
 
 ## Introduction
 
-I use <span class='app'>Blender</span> for creating 3D models that can later be printed as objects. The 3D models can be created interactively using the <span class='app'>Blender</span> GUI, but I create most of my objects using Python scripting for controlling <span class='app'>Blender</span>. The two next posts introduces [interactive modeling](../reprap-blender-rudder-part1) and [modeling using python scripting](../reprap-blender-rudder-part2). This post covers the setup of <span class='app'>Blender</span> for python scripting.
+I use <span class='app'>Blender</span> for creating 3D models that can later be printed as objects. The 3D models can be created interactively using the <span class='app'>Blender</span> GUI, but I create most of my objects using Python scripting for controlling <span class='app'>Blender</span>. The posts on Design a kayak rudder [part 1](../../blender-gui/reprap-blender-rudder-part1/) and [part 2](.../../blender-gui/reprap-blender-rudder-part2) cover how to interactively create 3D printing models in <span class='app'>Blender</span> GUI. This post covers the setup of <span class='app'>Blender</span> for python scripting.
 
 ## Prerequisites
 
-You need to install a version of <span class='app'>Blender</span> that can be used for Python scripting, detailed in the [previous](../reprap-software/) post.
+You need to install a version of <span class='app'>Blender</span> that can be used for Python scripting, detailed in the post on [Reprap software setup](../reprap-software/).
 
 ## Blender
 

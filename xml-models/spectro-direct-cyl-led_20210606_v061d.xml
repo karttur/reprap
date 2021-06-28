@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<dim>
+	<output ply='1' stl='0' obj='0'>
+			/Users/thomasgumbricht/docs-local/STL_models/2021/spectro-direct-cyl-led_20210606_v061d
+	</output>
+
+	<box baseshape = 'cube' W='1.0' L='1.0' H='2' wallT='2.0' floorT='-2.0' cornerradius='0' innerrim='0' outerrim='0' rimheight='0'>0</box>
+
+	<structures>
+
+		<item id='spectro-cyl' baseshape = 'cylinder' inside='0'  W='39.1' L='39.1' H='1' D1='24' D2='3' centerx='-10' centery='0' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='3' rimheight='15' embed='0'>
+		</item>
+
+		<item id='spectro-cyl-inner' baseshape = 'cylinder' inside='0'  W='39.3' L='39.3' H='1' D1='24' D2='3' centerx='-10' centery='0' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='3' rimheight='10' embed='0' removeonly='1'>
+		</item>
+
+		<item id='trxxtra' baseshape = 'cube' inside='0'  W = '18.51' L = '0' H = '12' centerx='11.5' centery='-14' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='1.0' rimheight='15' embed='0'>
+		</item>
+
+		<item id='trx' baseshape = 'cube' inside='0'  W = '17.51' L = '7.61' H = '12' centerx='10.5' centery='-21' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='2.85' rimheight='15.01' embed='0'>
+		</item>
+
+		<item id='trxremove0' baseshape = 'cube' inside='0'  W = '17.4' L = '7.5' H = '12' centerx='10.5' centery='-21' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='2.35' rimheight='30' embed='0' removeonly='1'>
+		</item>
+
+		<item id='trxremove1' baseshape = 'cube' inside='0'  W = '14.3' L = '14.4' H = '12' centerx='-3.0' centery='-11.25' centerz='10' rotationx='0' rotationy='0' rotationz='0' rimwidth='7.0' rimheight='30' embed='0' removeonly='1'>
+		</item>
+
+		<itemx id='trxremove2' baseshape = 'cube' inside='0'  W = '15.3' L = '4.4' H = '12' centerx='10.5' centery='-17' centerz='10' rotationx='0' rotationy='0' rotationz='0' rimwidth='2.35' rimheight='22' embed='0' removeonly='1'>
+		</itemx>
+
+		<item id='trxremove3' baseshape = 'cylinder' inside='0'  W = '6.6' L = '4.1' H = '5.0' centerx='6.5' centery='-16.8' centerz='4.5' rotationx='0' rotationy='0' rotationz='0' rimwidth='2' rimheight='22.5' embed='0' removeonly='1'>
+		</item>
+
+		<item id='trxremove4' baseshape = 'cylinder' inside='0'  W = '6.6' L = '4.1' H = '10.0' centerx='14.5' centery='-16.8' centerz='4.5' rotationx='0' rotationy='0' rotationz='0' rimwidth='2' rimheight='22.5' embed='0' removeonly='1'>
+		</item>
+
+		<item id='lightplatform' baseshape = 'cylinder' inside='0'  W = '0.1' L = '4.5' H = '1' centerx='5' centery='0' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='8.1' rimheight='8' embed='0'>
+		</item>
+
+		<item id='lightcylremove' baseshape = 'cylinder' inside='0'  W = '5.5' L = '5.5' H = '1' centerx='8' centery='0' centerz='0.0' rotationx='0' rotationy='-38' rotationz='0' rimwidth='2' rimheight='25' embed='0' removeonly='1'>
+		</item>
+
+		<item id='lightcylremove' baseshape = 'cylinder' inside='0'  W = '6.75' L = '6.75' H = '1' centerx='8' centery='0' centerz='0.0' rotationx='0' rotationy='-38' rotationz='0' rimwidth='2' rimheight='9' embed='0' removeonly='1'>
+		</item>
+
+		<item id='valley2' baseshape = 'cylinder' inside='0' W = '5' L = '5' H = '14' D1='1' D2='2' centerx='9.5' centery='-8' centerz='0' rotationx='-30' rotationy='90' rotationz='35' rimwidth='3' rimheight='19' embed='0' removeonly='1'>
+		</item>
+
+		<item id='powercord' baseshape = 'cylinder' inside='0' W = '5' L = '5' H = '14' D1='1' D2='2' centerx='4.0' centery='-6.5' centerz='0' rotationx='5' rotationy='0' rotationz='0' rimwidth='3' rimheight='22' embed='0' removeonly='1'>
+		</item>
+
+		<item id='textv' baseshape = 'text' text='xSpectre; v0.61d' inside='0' W = '6' L = '6' H = '3' centerx='0' centery='-28.5' centerz='8' rotationx='90' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='-1'>
+		</item>
+
+	</structures>
+
+</dim>

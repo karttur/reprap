@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<dim>
+	<output ply='1' stl='0' obj='0'>
+			/Users/thomasgumbricht/docs-local/STL_models/2021/spectro-cuvette-trx_202100606_v061d
+	</output>
+
+	<box baseshape = 'cube' W='1.0' L='1.0' H='2' wallT='2.0' floorT='-2.0' cornerradius='0' innerrim='0' outerrim='0' rimheight='0'>0</box>
+
+	<structures>
+
+		<item id='frame' baseshape = 'cube' inside='0'  W = '43.6' L = '7.4' H = '12' centerx='9' centery='0' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='2.5' rimheight='22.5' embed='0'>
+		</item>
+
+		<item id='centerdivide' baseshape = 'cube' inside='0'  W = '0' L = '7.4' H = '12' centerx='12.3' centery='0' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='2.5' rimheight='22.5' embed='0'>
+		</item>
+
+		<item id='trxremove' baseshape = 'cube' inside='0'  W = '17.3' L = '4.4' H = '12' centerx='22.2' centery='5' centerz='15' rotationx='0' rotationy='0' rotationz='0' rimwidth='2.35' rimheight='22' embed='0' removeonly='1'>
+		</item>
+
+		<item id='trxremovecyl1' baseshape = 'cylinder' inside='0'  W = '7.8' L = '4.2' H = '5.0' centerx='18.5' centery='3.1' centerz='4.3' rotationx='0' rotationy='0' rotationz='0' rimwidth='2' rimheight='14.5' embed='0' removeonly='1'>
+		</item>
+
+		<item id='trxremovecyl1' baseshape = 'cylinder' inside='0'  W = '7.8' L = '4.2' H = '5.0' centerx='26.3' centery='3.1' centerz='4.3' rotationx='0' rotationy='0' rotationz='0' rimwidth='2' rimheight='14.5' embed='0' removeonly='1'>
+		</item>
+
+		<item id='cuvetterim+foot' baseshape = 'cube' inside='0'  W = '0' L = '22.6' H = '12' centerx='-15' centery='-0.3' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='2' rimheight='22.5' embed='0'>
+		</item>
+
+		<item id='trxfoot' baseshape = 'cube' inside='0'  W = '0' L = '16.8' H = '12' centerx='33' centery='-3.2' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='2' rimheight='22.5' embed='0'>
+		</item>
+
+		<item id='cuvettebrim' baseshape = 'cube' inside='0'  W = '2' L = '0' H = '12' centerx='-14' centery='11' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='2' rimheight='22.5' embed='0'>
+		</item>
+
+		<item id='supportwall' baseshape = 'cube' inside='0'  W = '0' L = '20' H = '12' centerx='13.0' centery='16' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='3.0' rimheight='11' embed='0'>
+		</item>
+
+		<item id='cuvettefloor' baseshape = 'cube' inside='0'  W = '26' L = '0' H = '12' centerx='-2' centery='7' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='2' rimheight='22.5' embed='0'>
+		</item>
+
+		<item id='supportwallsupport' baseshape = 'cube' inside='0'  W = '0' L = '14' H = '2' centerx='15' centery='13' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='2.0' rimheight='2' embed='0'>
+		</item>
+
+
+		<item id='cuvettebrimremover' baseshape = 'cube' inside='0'  W = '3' L = '2' H = '10' centerx='11.5' centery='9.0' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='2.3' rimheight='20' embed='0' removeonly='1'>
+		</item>
+
+		<item id='textv' baseshape = 'text' text='xSpectre; v0.61d' inside='0' W = '6' L = '6' H = '3' centerx='0' centery='-8' centerz='12' rotationx='90' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='-1'>
+		</item>
+
+	</structures>
+
+</dim>

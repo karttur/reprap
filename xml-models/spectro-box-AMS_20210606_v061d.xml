@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='utf-8'?>
+<dim>
+	<output ply='1' stl='0' obj='0'>
+			/Users/thomasgumbricht/docs-local/STL_models/2021/spectro-box-AMS_20210606_v061d
+	</output>
+
+	<box baseshape = 'cube' W='94.3' L='55.0' wallT='4.0'  H='25.0' floorT='3.0'  cornerradius='4' innerrim='0' outerrim='1.5' rimheight='1.5'></box>
+
+	<structures>
+
+		<!--
+			The rotation needs to be fitted to the position as follows:
+			Floor or roof: 0,0,0
+			along front or back: 0,y,0
+			along sides: x,0,0
+
+			If embed is set, the breakout board will be forced to fit the inner wall floor or roof,
+				regardless if that is correctly given or not. The rotation determins which side to use
+
+			All positions are adjusted to fit inside the box, if that does not work out you have to enlarge the box
+
+		-->
+
+		<item id='spectrometer' baseshape = 'cube' inside='1'  W='27.5' L='27.5' H='2.5' centerx='9' centery='5.5' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='3' rimheight='2' embed='0'>
+
+			<hole id = 'spectrosensor' type = 'opening' holeshape = 'cube' W='6' L='6' fromcenterx='0' fromcentery='0.2' rotationx='0' rotationy='0'>
+			</hole>
+
+			<hole id = 'spectrolight' type = 'opening' holeshape = 'cube' W='3.5' L='3.5' fromcenterx='0' fromcentery='-4.5' rotationx='0' rotationy='0'>
+			</hole>
+
+			<holex id = 'spectroblob' type = 'opening' holeshape = 'cube' W='7' L='5' fromcenterx='-7' fromcentery='0.2' rotationx='0' rotationy='0'>
+			</holex>
+		</item>
+
+		<item id='spectroblob' baseshape = 'cube' inside='1' W='7' L='5' H='2.5' centerx='2' centery='6' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='2'>
+		</item>
+
+		<item id='spectrosold' baseshape = 'cube' inside='1' W='24.5' L='22.0' H='2.5' centerx='9' centery='6' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='1'>
+		</item>
+
+		<item id='cordholder' baseshape = 'cube' inside='1'  W='0' L='37' H='0' centerx='44' centery='2.5' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='5' rimheight='9' embed='0'>
+
+			<hole id = 'cord1' type='wire-rotx' holeshape = 'cylinder' W='2.0' L='2.0' fromcenterx='-1.9' fromcentery='0' rotationx='0' rotationy='15'>
+			</hole>
+			<hole id = 'cord2' type='wire-rotx' holeshape = 'cylinder' W='2.0' L='2.0' fromcenterx='-1.9' fromcentery='2.6' rotationx='0' rotationy='15'>
+			</hole>
+			<hole id = 'cord2' type='wire-rotx' holeshape = 'cylinder' W='2.0' L='2.0' fromcenterx='-1.9' fromcentery='5.2' rotationx='0' rotationy='15'>
+			</hole>
+			<hole id = 'cord2' type='wire-rotx' holeshape = 'cylinder' W='2.0' L='2.0' fromcenterx='-1.9' fromcentery='7.8' rotationx='0' rotationy='15'>
+			</hole>
+			<hole id = 'cord2' type='wire-rotx' holeshape = 'cylinder' W='2.0' L='2.0' fromcenterx='-1.9' fromcentery='10.4' rotationx='0' rotationy='15'>
+			</hole>
+			<hole id = 'cord2' type='wire-rotx' holeshape = 'cylinder' W='2.0' L='2.0' fromcenterx='-1.9' fromcentery='13.0' rotationx='0' rotationy='15'>
+			</hole>
+			<hole id = 'cord2' type='wire-rotx' holeshape = 'cylinder' W='2.0' L='2.0' fromcenterx='-1.9' fromcentery='15.6' rotationx='0' rotationy='15'>
+			</hole>
+			<hole id = 'cord2' type='wire-rotx' holeshape = 'cylinder' W='2.0' L='2.0' fromcenterx='-1.9' fromcentery='18.2' rotationx='0' rotationy='15'>
+			</hole>
+
+			<hole id = 'cord2' type='wire-rotx' holeshape = 'cylinder' W='2.0' L='2.0' fromcenterx='-1.9' fromcentery='-2.6' rotationx='0' rotationy='15'>
+			</hole>
+			<hole id = 'cord2' type='wire-rotx' holeshape = 'cylinder' W='2.0' L='2.0' fromcenterx='-1.9' fromcentery='-5.2' rotationx='0' rotationy='15'>
+			</hole>
+			<hole id = 'cord2' type='wire-rotx' holeshape = 'cylinder' W='2.0' L='2.0' fromcenterx='-1.9' fromcentery='-7.8' rotationx='0' rotationy='15'>
+			</hole>
+			<hole id = 'cord2' type='wire-rotx' holeshape = 'cylinder' W='2.0' L='2.0' fromcenterx='-1.9' fromcentery='-10.4' rotationx='0' rotationy='15'>
+			</hole>
+			<hole id = 'cord2' type='wire-rotx' holeshape = 'cylinder' W='2.0' L='2.0' fromcenterx='-1.9' fromcentery='-13.0' rotationx='0' rotationy='15'>
+			</hole>
+			<hole id = 'cord2' type='wire-rotx' holeshape = 'cylinder' W='2.0' L='2.0' fromcenterx='-1.9' fromcentery='-15.5' rotationx='0' rotationy='15'>
+			</hole>
+			<hole id = 'cord2' type='wire-rotx' holeshape = 'cylinder' W='2.0' L='2.0' fromcenterx='-1.9' fromcentery='-18.2' rotationx='0' rotationy='15'>
+			</hole>
+		</item>
+
+		<item id='batterypillar1' baseshape = 'cube' inside='1'  W='0' L='1' H='16' centerx='24.5' centery='24' centerz='0' rotationx='15' rotationy='0' rotationz='0' rimwidth='3.5' rimheight='17' embed='0'>
+		</item>
+
+		<item id='batterypillar3' baseshape = 'cube' inside='1'  W='0' L='5' H='10' centerx='24.5' centery='-5.25' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='3.5' rimheight='16' embed='0'>
+			<hole id = 'spectrometerwall1' type='wire-roty' holeshape = 'cylinder' W='2.5' L='2.5' fromcenterx='0' fromcentery='-2.7' rotationx='0' rotationy='0'>
+			</hole>
+			<hole id = 'spectrometerwall1' type='wire-roty' holeshape = 'cylinder' W='2.5' L='2.5' fromcenterx='0' fromcentery='0' rotationx='0' rotationy='0'>
+			</hole>
+		</item>
+
+		<item id='arduinorpillar1' baseshape = 'cube' inside='1'  W='0' L='5' H='10' centerx='35.5' centery='-5' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='2' rimheight='10' embed='0'>
+			<hole id = 'arduinopillar1' type='wire-roty' holeshape = 'cylinder' W='2.0' L='2.0' fromcenterx='-1.4' fromcentery='-2' rotationx='0' rotationy='0'>
+			</hole>
+			<hole id = 'arduinopillar1' type='wire-roty' holeshape = 'cylinder' W='2.0' L='2.0' fromcenterx='+1.4' fromcentery='-2' rotationx='0' rotationy='0'>
+			</hole>
+		</item>
+
+		<item id='batterycontrolpillar' baseshape = 'cube' inside='1'  W='2' L='0' H='2' centerx='32' centery='-20' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='2' rimheight='8' embed='0'>
+		</item>
+
+		<item id='batterycontrolbackstop' baseshape = 'cube' inside='1'  W='0' L='2' H='2' centerx='17.0' centery='-23' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='2' rimheight='8' embed='0'>
+		</item>
+
+		<item id='textv' baseshape = 'text' text='     xSpectre; v0.61d 202106' inside='0' W = '6' L = '6' H = '3' centerx='49.5' centery='-19' centerz='20' rotationx='90' rotationy='0' rotationz='90' rimwidth='0' rimheight='0' embed='-1'>
+		</item>
+
+		<item id='btbtnblob' baseshape = 'cube' inside='1'  W='8.0' L='4.0' H='2'  centerx='10' centery='-20' centerz='2' rotationx='0' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='2'>
+		</item>
+
+		<item id='onoff' baseshape = 'cube' inside='1'  W='11' L='11.2' H='9' centerx='27' centery='15' centerz='8.6' rotationx='0' rotationy='90' rotationz='0' rimwidth='0' rimheight='0' embed='2'>
+			<hole id = 'offon' type = 'opening' holeshape = 'cube' W='6.0' L='11.2'  fromcenterx='0' fromcentery='-3' rotationx='0' rotationy='0'>
+			</hole>
+		</item>
+
+		<itemx id='onoffoutside' baseshape = 'cube' inside='0'  W='2.0' L='10.0' H='5.0' centerx='51' centery='5' centerz='5' rotationx='0' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='-1'>
+		</itemx>
+
+		<item id='nano' baseshape = 'cube' inside='1'  W = '19' L = '43' H = '7' centerx='60' centery='30' centerz='15' rotationx='0' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='0.5'>
+		</item>
+
+		<item id='nanousb' baseshape = 'cube' inside='1'  W = '19' L = '5' H = '4.1' centerx='35.5' centery='22.5' centerz='12.5' rotationx='90' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='1'>
+			<hole id = 'microusb' type = 'opening' holeshape = 'cube'  W='9' L='5'  fromcenterx='0' fromcentery='1.5' rotationx='0' rotationy='0'>
+			</hole>
+		</item>
+
+		<item id='nanoedge' baseshape = 'cube' inside='1'  W = '20' L = '2.5' H = '6.0' centerx='35.5' centery='23.5' centerz='12.4' rotationx='90' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='4'>
+		</item>
+
+		<item id='battery' baseshape = 'cube' inside='1'  W = '71' L = '43' H = '9.5' centerx='30' centery='30' centerz='24.0' rotationx='0' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='2'>
+		</item>
+
+
+		<item id='batterycontrol' baseshape = 'cube' inside='1'  W='27.5' L='20.5' H='5'  centerx='34.3' centery='-20' centerz='14' rotationx='90' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='2.5'>
+		</item>
+
+		<item id='batterycontrolsold' baseshape = 'cube' inside='1'  W='16' L='17.5' H='6.2'  centerx='27.5' centery='-24' centerz='12' rotationx='90' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='4'>
+		</item>
+
+		<item id='batteryusb1' baseshape = 'cube' inside='0'  W = '9.5' L = '4' H = '5' centerx='40' centery='-27' centerz='11.75' rotationx='0' rotationy='90' rotationz='0' rimwidth='0' rimheight='0' embed='4'>
+		</item>
+
+		<item id='batteryusb2' baseshape = 'cube' inside='0'  W = '9.5' L = '3' H = '6' centerx='45' centery='-25' centerz='11.75' rotationx='0' rotationy='90' rotationz='0' rimwidth='0' rimheight='0' embed='4'>
+		</item>
+
+		<item id='batterysnutt' baseshape = 'cube' inside='1'  W = '3' L = '3' H = '3' centerx='36' centery='-18' centerz='18' rotationx='90' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='2'>
+		</item>
+
+		<item id='batterylight' baseshape = 'cube' inside='1'  W = '6' L = '4' H = '6.1' centerx='32' centery='-25' centerz='5.3' rotationx='90' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='4'>
+			<hole id = 'batlight' type = 'opening' holeshape = 'cube'  W='4' L='4'  fromcenterx='0' fromcentery='0' rotationx='0' rotationy='0'>
+			</hole>
+		</item>
+
+		<item id='stepup' baseshape = 'cube' inside='1'  W='30.0' L='20.0' H='4'  centerx='-1' centery='-21' centerz='11.5' rotationx='90' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='2'>
+		</item>
+
+		<item id='stepupsolderul' baseshape = 'cube' inside='1'  W='5' L='5' H='5'  centerx='10' centery='-20' centerz='18' rotationx='90' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='2.75'>
+		</item>
+
+		<item id='stepupsolderll' baseshape = 'cube' inside='1'  W='5' L='5' H='5'  centerx='10' centery='-20' centerz='4' rotationx='90' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='2.75'>
+		</item>
+
+		<item id='stepupsolderr' baseshape = 'cube' inside='1'  W='5' L='10' H='5'  centerx='-10' centery='-20' centerz='11' rotationx='90' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='2.75'>
+		</item>
+
+		<item id='trx' baseshape = 'cube' inside='1'  W = '17.4' L = '7.5' H = '5' centerx='-12.3' centery='-15.2' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='1.5' rimheight='14' embed='2'>
+		<hole id = 'trxhole' type = 'opening' holeshape = 'cube' W='17.5' L='7.6'  fromcenterx='0' fromcentery='0' rotationx='0' rotationy='0'>
+		</hole>
+		</item>
+
+		<item id='trxremove2' baseshape = 'cylinder' inside='0'  W = '5.6' L = '4.1' H = '5.0' centerx='-8.55' centery='-11.95' centerz='15' rotationx='0' rotationy='0' rotationz='0' rimwidth='2' rimheight='4' embed='0' removeonly='1'>
+		</item>
+
+		<item id='trxremove2' baseshape = 'cylinder' inside='0'  W = '5.6' L = '4.1' H = '5.0' centerx='-16.05' centery='-11.95' centerz='15' rotationx='0' rotationy='0' rotationz='0' rimwidth='2' rimheight='4' embed='0' removeonly='1'>
+		</item>
+
+		<item id='trx2' baseshape = 'cube' inside='0'  W = '0.0' L = '8.4' H = '5' centerx='-21.7' centery='-15.2' centerz='4' rotationx='0' rotationy='0' rotationz='0' rimwidth='1.25' rimheight='3' embed='0'>
+		</item>
+
+		<item id='external1' baseshape = 'cube' inside='1'  W='7.0' L='12.0' H='12' centerx='-35' centery='9' centerz='13.7' rotationx='0' rotationy='90' rotationz='0' rimwidth='0' rimheight='0' embed='0'>
+			<hole id = 'brutal1' type = 'opening' holeshape = 'cylinder'  W='13.7' L='13.7'  fromcenterx='0' fromcentery='0.0' rotationx='0' rotationy='0'>
+			</hole>
+		</item>
+
+		<item id='phboard' baseshape = 'cube' inside='1'  W='30' L='30' H='2.5' centerx='-33' centery='7' centerz='6.7' rotationx='0' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='2'>
+		</item>
+
+		<item id='phboardwall1' baseshape = 'cube' inside='1'  W='58' L='12.5' H='5'  centerx='-30.5' centery='20' centerz='12' rotationx='90' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='2.0'>
+		</item>
+
+		<item id='phboardsolder' baseshape = 'cube' inside='1'  W='10' L='5' H='5'  centerx='-25.5' centery='20' centerz='4' rotationx='90' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='2.0'>
+		</item>
+
+		<item id='phboardwall2' baseshape = 'cube' inside='1'  W='21.4' L='29' H='5'  centerx='-34.5' centery='9' centerz='16' rotationx='0' rotationy='90' rotationz='0' rimwidth='0' rimheight='0' embed='2.0'>
+		</item>
+
+		<item id='phboardsolder' baseshape = 'cube' inside='1'  W='10' L='15' H='2.5' centerx='-40' centery='9' centerz='4.5' rotationx='0' rotationy='0' rotationz='0' rimwidth='0' rimheight='0' embed='1.5'>
+		</item>
+
+		<item id='phpillar' baseshape = 'cube' inside='1'  W='20' L='0' H='3' centerx='-24.5' centery='-5' centerz='0' rotationx='0' rotationy='0' rotationz='0' rimwidth='2.5' rimheight='3' embed='0'>
+		</item>
+
+		<item id='external2' baseshape = 'cube' inside='1'  W='7.0' L='12.0' H='12' centerx='-35' centery='-14' centerz='14.5' rotationx='0' rotationy='90' rotationz='0' rimwidth='0' rimheight='0' embed='0'>
+			<hole id = 'brutal2' type = 'opening' holeshape = 'cylinder'  W='12.0' L='12.0'  fromcenterx='0' fromcentery='0' rotationx='0' rotationy='15'>
+			</hole>
+		</item>
+
+	</structures>
+
+</dim>

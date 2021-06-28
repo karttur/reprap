@@ -37,7 +37,7 @@ In the Printer settings window, add a name of the configuration you want to crea
 
 #### Connection
 
-if the _Connection_ is not correctly set, you will not be able to communicate with your printer. You have to give the _Port_, and probably the _Baud Rate_ will differ comapred to the default. You need to check the documentation of your 3D-printer to get the correct _Baud Rate_. The other parameters will most likely work by leaving the defaults.
+If the _Connection_ is not correctly set, you will not be able to communicate with your printer. You have to give the _Port_, and probably the _Baud Rate_ will differ comapred to the default. You need to check the documentation of your 3D-printer to get the correct _Baud Rate_. The other parameters will most likely work by leaving the defaults. For my Macbook air and German RepRap PRotos V2 the _Port_ is set to _usbmodem14201_ and _baudrate_ to _250000_. The other entries are kept with their default setting.
 
 <figure>
 <img src="../../images/repetier-printer-config-connection.png">
@@ -46,7 +46,7 @@ if the _Connection_ is not correctly set, you will not be able to communicate wi
 
 #### Behaviour
 
-Under the <span class='tab'>Behaviour</span> tab, you need to change the _Default Extruder Temperature_ and the _Default heated bed temperature_  to fit your printer, its heated bed and the material. The _Travel Feedrate_ depends on the extruder opening. The German RepRap PRotos V2 can travel at higher speed then the default. The smaller extruder (1.75 mm) can travel as fast as 10800 mm/min and the larger (3 mm) at 6000 mm/min.
+Under the <span class='tab'>Behaviour</span> tab, you need to change the _Default Extruder Temperature_ and the _Default heated bed temperature_  to fit your printer, its heated bed and the material. The _Travel Feedrate_ depends on the extruder opening. The German RepRap PRotos V2 can travel at higher speed then the default. The smaller extruder (1.75 mm) can travel as fast as 10800 mm/min and the larger (3 mm) at 8000 mm/min.
 
 <figure>
 <img src="../../images/repetier-printer-config-behaviour.png">

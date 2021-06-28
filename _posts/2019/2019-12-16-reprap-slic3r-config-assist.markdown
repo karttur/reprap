@@ -25,7 +25,7 @@ After [configuring <span class='app'>Repetier-Host</span>](../reprap-repetier-ho
 
 ### Configuration assistant
 
-When you start <span class='app'>Slic3r</span> for the first time, you should get to the _Configuraton Assistant_. The first page is the welcome page and in total there are eight pages to fill in.
+When you start <span class='app'>Slic3r</span> for the first time, you should get to the _Configuraton Assistant_. The first page is the welcome page and in total there are eight pages to fill in. The paged below illustrate the default settings as of January 2021. For my German RepRap PRotos V2 vid a nozzle for 3 (2.95) mm filament, the default settings work OK.
 
 <figure>
 <img src="../../images/slic2r-config-01.png">
